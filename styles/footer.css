@@ -1,0 +1,420 @@
+/* .footer  div {
+  border: 1px solid red;
+} */
+
+
+
+/**********/
+/* Footer */
+/**********/
+/* this is the main footer container */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  width: 100%;
+  padding: 20px 20px;
+  background: #292759;
+}
+/* this are all the divs inside the main container */
+.footer > div {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+/* this is the top section where the logo is inserted */
+/* this is the logo on the top of the footer */
+.footer-logo-img {
+  height: 80px;
+  background-image: url(../img/icons/slider-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 80%;
+  margin-top: 30px;
+}
+.footer-logo-email {
+  position: relative;
+  width: 160px;
+  border-radius: 8px;
+  padding: 10px 0;
+  margin: 40px auto 20px;
+  background: white;
+  text-align: center;
+  font-weight: 600;
+}
+.footer-logo-email::before {
+  display: block;
+  content: "All emails will be ansewered within less than 24 hours";
+  font-size: 10px;
+  z-index: 1;
+  position: absolute;
+  bottom: 46px;
+  left: -56px;
+  width: 240px;
+  height: 10px;
+  background-color: #D6D3DE;
+  border-radius: 8px;
+  margin: 0px 4%;
+  padding: 7px;
+  font-weight: 100;
+}
+.footer-logo-email::after {
+  display: block;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  bottom: 37px;
+  left: 42%;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 10px solid #D6D3DE;
+}
+/* this is the second section with the links with the contacts  */
+.footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-contacts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-contacts div:nth-child(1) {
+  display: none;
+}
+.footer-contacts div:nth-child(2) {
+  width: 100%;
+}
+.footer-contacts p {
+  display: none;
+}
+.footer-contacts a {
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+  line-height: 23px;
+  text-decoration: none;
+}
+.footer-contacts a span {
+  background: white;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 15px;
+  margin-right: 15px;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 65% 80%;
+}
+.footer-contacts a:nth-child(3) span {
+  background-image: url(../img/icons/whatsapp.svg);
+}
+.footer-contacts a:nth-child(4) span {
+  background-image: url(../img/icons/skype.svg);
+}
+.footer-contacts a:nth-child(5) span {
+  background-image: url(../img/icons/instagram.svg);
+}
+.footer-contacts a:nth-child(6) span {
+  background-image: url(../img/icons/twitter.svg);
+}
+.footer-contacts a:nth-child(7) span {
+  background-image: url(../img/icons/facebook.svg);
+}
+/* this is the services section with the different pages in the website  */
+.footer-services {
+  display: none;
+}
+.footer-information {
+  display: none;
+}
+/* this is the last section with the copywrigth with the contacts  */
+.footer-copyright {
+  color: white;
+}
+.footer-copyright p {
+  width: 83%;
+  margin: 10px auto;
+  padding: 15px;
+  color: white;
+  line-height: 16px;
+}
+.footer-copyright p:nth-child(2) {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##Device = Tablets, Ipads (portrait)
+  ##Screen = from 768px  */
+@media (min-width: 768px) {
+
+.footer { 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+/* the logo section is disabled on mobile */
+.footer-logo {
+  display: none;
+}
+/* this is the second section with the links with the contacts  */
+.footer-contacts {
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
+}
+.footer-contacts div:nth-child(1) {
+  display: block;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.footer-contacts div:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.footer-contacts p {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+}
+.footer-contacts a {
+  width: 100%;
+}
+.footer-contacts a:hover {
+  color: #645982;
+}
+.footer-contacts a:hover span {
+  background-color: #645982;
+}
+/* this is the services section with the different pages in the website  */
+.footer-services {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-services div:nth-child(1) {
+  -ms-flex-preferred-size: 65px;
+      flex-basis: 65px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.footer-services div:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-services div ul {
+  list-style: none;
+  margin-left: 4px;
+}
+.footer-services div ul li {
+  color: white;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.footer-services div ul li:hover {
+  color: #645982;
+  }
+.footer-services div:nth-child(2) ul:nth-child(2) {
+  display: none;
+}
+.footer-services div:nth-child(2) ul:nth-child(3) {
+  display: none;
+}
+/* this is the third section with the links with help content  */
+.footer-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
+}
+.footer-information div:nth-child(1) {
+  -ms-flex-preferred-size: 65px;
+      flex-basis: 65px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.footer-information div:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-information div ul {
+  list-style: none;
+  margin-left: 4px;
+}
+.footer-information div ul li {
+  color: white;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.footer-information div ul li:hover {
+  color: #645982;
+}
+
+
+
+
+
+/* this is the last section with the copywrigth with the contacts  */
+.footer-copyright {
+  color: white;
+}
+.footer-copyright p:nth-child(1) {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*##Device = Laptops, Desktops
+  ##Screen = more than 1070px */
+    @media (min-width: 1070px) { 
+ 
+      
+
+.footer div {
+  margin: 0px 10px;
+}
+.footer-services {
+  -ms-flex-preferred-size: 415px;
+      flex-basis: 415px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.footer-services div:nth-child(2) {
+  max-height: 350px;
+}
+.footer-services div:nth-child(2) ul:nth-child(2) {
+  display: block;
+}
+.footer-services div:nth-child(2) ul:nth-child(3) {
+  display: block;
+}
+
+
+
+.footer-information {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+
+}
+
+
+
+.footer-copyright {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+
+
+
+
+
+
+  
+  }

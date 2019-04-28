@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Lisbon Stories</title>
+  <link rel="shortcut icon" href="./img/icons/tablogo.ico">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/pages.css">
+
+</head>
+<body>
+
+  
+ 
+<!------------------------------>
+<!-- this is the image slider -->
+<!------------------------------>
+<section class="slider-image"> 
+
+  <!-- This is the slider div -->   
+  <div class="carousel-slide">   
+      <div class="slide-img-first"></div>
+      <div class="slide-img-one"></div>
+      <div class="slide-img-two"></div>  
+      <div class="slide-img-three"></div>  
+      <div class="slide-img-last"></div>         
+  </div>
+  <!-- this are the buttons for the slidding div -->
+   <button id="prevBtn"><svg viewBox="0 0 256 256"><polyline fill="none" stroke="white" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" points="184,16 72,128 184,240" /></svg></button>
+  <button id="nextBtn"><svg viewBox="0 0 256 256"><polyline fill="none" stroke="white" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" points="72,16 184,128 72,240" /></svg></button>
+
+</section>
+
+
+
+<!----------------------------->
+<!-- this is the mobile menu -->
+<!----------------------------->
+<section class="menu-mobile">
+      <!-- this is the mobile menu button -->
+      <div class="menu-mobile-toggle">
+        <div class="menu-hamburger"></div>
+      </div>
+      <!--this is the mobile menu list-->
+      <div class="menu-mobile-dropdown">
+        <a class="menu-mobile-logo" href=""></a>
+        <h1>MENU</h1>
+
+        <ul class="menu-mobile-accordion">
+          <li>
+            <div class="menu-accordion-header"><a href="">Home</a></div>
+            <div class="menu-accordion-content">
+            </div>
+          </li>
+          <li>
+            <div class="menu-accordion-header">Lisbon</div>
+            <div class="menu-accordion-content">
+              <p>Purely Lisbon</p>
+              <p>Tiles: tour & painting workshop</p>
+              <p>Historical Elevators</p>
+              <p>Old-fashioned shopping tour</p>
+              <p>Old town walking tour</p>
+              <p>Lisbon with kids</p>
+              <p>Jewish Heritage</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-accordion-header">Day Trips</div>
+            <div class="menu-accordion-content">
+              <p>Lisbon and Sintra</p>
+              <p>Sintra and Cascais</p>
+              <p>Obidos and Ericeira</p>
+              <p>Evora, Cork & Wine</p>
+              <p>Fátima and Surroundings</p>
+              <p>Arrabida: Wine, Cheese & Tiles</p>
+              <p>Fátima and Lisbon</p>
+              <p>Chasing the Templar Knights</p>
+              <p>Hiking in Sintra</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-accordion-header">Experiences</div>
+            <div class="menu-accordion-content">
+              <p>Castles and Wild Horses</p>
+              <p>Trail Running Day Trip</p>
+              <p>Porto & Douro valley, 3 days</p>
+              <p>One week</p>
+              <p>Stop-Over Lisbon</p>
+              <p>Your Own Tour</p>
+              <p>Historical Villages, 3 days</p>
+              <p>Coimbra & Central Portugal 2days</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-accordion-header">May I Help</div>
+            <div class="menu-accordion-content">
+              <p>FAQ</p>
+              <p>About Lisbon Stories</p>
+              <p>Travelling With Kids</p>
+              <p>What's a Licensed Guide</p>
+              <p>Gift Certificates</p>
+              <p>Reviews</p>
+              <p>Shore Excursions</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-accordion-header">Tips</div>
+            <div class="menu-accordion-content">
+              <p>Basic Information</p>
+              <p>Getting Around</p>
+              <p>Gastronomy</p>
+              <p>Accommodation</p>
+            </div>
+          </li>
+          <li onclick="redirectPage(6,0)">
+            <div class="menu-accordion-header" >Contacts</div>
+            <div class="menu-accordion-content">         
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+
+
+      
+</section>
+    
+<div class="menu-mobile-languages">
+  <button id="langPt"></button>
+  <button id="langEn"></button>
+</div>
+<div class="menu-mobile-topics"></div>
+
+
+
+<!------------------------------>
+<!-- this is the desktop menu -->
+<!------------------------------>
+<section class="menu-desktop">
+  <a class="menu-desktop-logo" href=""></a>
+   <div class="menu-desktop-main">
+    <div>Home</div>
+    <div>Lisbon
+      <ul>
+        <li>Purely Lisbon</li>
+        <li>Tiles: tour & painting workshop</li>
+        <li>Historical Elevators</li>
+        <li>Old-fashioned shopping tour</li>
+        <li>Old town walking tour</li>
+        <li>Lisbon with kids</li>
+        <li>Jewish Heritage</li>
+      </ul>
+    </div>
+    <div>Day Trips
+      <ul>
+        <li>Lisbon and Sintra</li>
+        <li>Sintra and Cascais</li>
+        <li>Obidos and Ericeira</li>
+        <li>Evora, cork & wine</li>
+        <li>Fatima and surroundings</li>
+        <li>Arrabida: Wine, cheese & tiles</li>
+        <li>Fatima and Lisbon</li>
+        <li>Chasing the Templar Knights</li>
+        <li>Hiking in Sintra</li>
+      </ul>
+    </div>
+    <div>Experiences
+      <ul>
+        <li>Castles and wild horses</li>
+        <li>Trail Running Day Trip</li>
+        <li>Porto & Douro valley</li>
+        <li>One week</li>
+        <li>Stop-Over Lisbon</li>
+        <li>Your own tour</li>
+        <li>Historical Villages</li>
+        <li>Coimbra & central Portugal</li>
+      </ul>
+    </div>
+    <div>May I Help
+      <ul>
+        <li>FAQ</li>
+        <li>About Lisbon Stories</li>
+        <li>Travelling With Kids</li>
+        <li>What's a Licensed Guide</li>
+        <li>Gift Certificates</li>
+        <li>Reviews</li>
+        <li>Shore Excursions</li>
+      </ul>
+    </div>
+    <div>Tips
+      <ul>
+        <li>Basic Information</li>
+        <li>Getting Around</li>
+        <li>Gastronomy</li>
+        <li>Accommodation</li>
+      </ul>
+    </div>
+    <div>Contacts</div>
+  </div> 
+  <div class="menu-desktop-languages">
+     <button id="langPt"></button>
+    <button id="langEn"></button>
+  </div>
+</section>
+
+
+
+
+  <section id="pre-loader"><img src="./img/icons/loader.gif" alt="Loading..." /></section>  
+  <section id="pages">
+
+
+
+
+   <section class="home">
+
+    <div class="home-title">
+        <h1>Private tours always guided by licensed tour guides</h1>
+    </div>
+    
+    <div class="home-second">
+        <div onclick="redirectPage(2,4)"><h4>Fatima</h4><p>Fatima is one of the most important shrines dedicated to Virgin Mary in the world and you’ll discover why!</p></div>
+        <div onclick="redirectPage(2,1)"><h4>Sintra Cascais</h4><p>Chosen in the XIV century as summer residence for the Portuguese Kings, and in the XIX century as capital of the romanticism, Sintra was called by Lord Byron as "My glorious Eden"</p></div>
+        <div onclick="redirectPage(3,2)"><h4>Porto & Douro valley</h4><p>There are very few similarities between Porto and Lisbon – they are both on the banks of large rivers, but that’s really where it ends. The two cities have totally different charms.</p></div>
+    </div> 
+
+    <div class="home-third">
+        <div><div><h4  onclick="redirectPage(1,0)">Purely Lisbon</h4></div></div>
+        <div><div><h4  onclick="redirectPage(1,4)">Lisbon with kids</h4></div></div>
+        <div><div><h4  onclick="redirectPage(2,1)">Sintra and Cascais</h4></div></div>
+        <div><div><h4  onclick="redirectPage(1,3)">Shopping Tour</h4></div></div>
+        <div><div><h4  onclick="redirectPage(2,8)">Hiking in Sintra</h4></div></div>
+        <div><div><h4  onclick="redirectPage(2,6)">Fatima and Lisbon</h4></div></div>
+        <div><div><h4  onclick="redirectPage(3,6)">Historical Villages</h4></div></div>    
+    </div>
+    <div class="home-fourth">
+        <div class="trip-advisor"></div>
+        <div class="turismo-portugal"></div>
+    </div>
+
+</section>
+
+
+
+
+<section class="page1">
+
+
+
+    <!-- this is the first topic inside the first page -->
+    <div id="topic" class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span> Purely Lisbon</h1>
+            <p>Looking forward to discover Lisbon in one day? Here's our plan:</p>
+            <p>We’ll start the morning exploring the heart of the city, walking (or driving, it's up to you) through districts such as the Bohemian Bairro Alto, the fancy Chiado, the picturesque Alfama and the vibrant Baixa. We'll stop by great views.</p>
+            <p>After lunch, we’ll be heading to Belém district, from where the Portuguese navigators left, looking for the “New World”. Here we’ll visit Jerónimos Monastery and Belém Tower, both classified by the Unesco as World Heritage Site, and also the Monument to the Discoveries.</p>
+            <p> Besides the rich history, Lisbon is also a modern city and the proof of that is the “Expo”, the park where the world exhibition of 1998 happened. Incorporated in the living area of the city, this part also has a huge amount of mordern architecture that can't be missed.</p>
+            <p> This is just my generic suggestion. The truth is that every Lisbon tour we do is different. It's always adapted to your personal interests, likes and dislikes, and mostly, to what you feel like doing and seeing in that day. </p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider103.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider101.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider102.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider103.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider101.jpg)"><h3>title</h3><p>asadad</p></div>  
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>6 to 8 hours private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>up to 2 persons <span>320€</span></p>
+                    <p>up to 4 persons<span>350€</span></p>
+                    <p>up to 6 persons<span>400€</span></p>
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider101.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider102.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider103.jpg)"></div>   
+        </div>
+    </div>
+
+<!-- this is the second topic inside the first page -->
+<div id="topic" class="excursons">
+
+    <div class="excursons-one">
+        <h1><span>ad</span>Tiles: tour & painting</h1>
+        <p>Did you know that “azulejo” means painted stone in Arabic?</p>
+        <p>Tiles were brought to Portugal by the Arabs and immediately integrated into our culture and architecture. Especially important when rebuilding the city after the 1755 Earthquake, tiles can be found everywhere and in every single style.</p>       
+        <p> Find the most beautiful examples of tiles, both old and modern, spread throughout the city. Learn what their use has been over time. Understand why are them such a vulnerable art piece. Get inspired by the most unique designs and then get your hand to work: paint your own tile!</p>
+        <p>You’ll be taken on a special walking tour of Lisbon, covering classic sites and finding special tiles. The walk will end in Alfama, in a special tile shop, where you can paint your very own tile. Upon your arrival, a resident artist will be waiting to assist you and will walk you through the process. Even if you don’t consider yourself an artist, I promise you’ll be pleasantly surprised with the result. </p>
+        <div class="icon-break"></div>
+    </div>
+    <div class="excursons-two">
+        <div class="excursons-two-slider">
+            <div style="background-image: url(./img/page-sliders/slider113.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider111.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider112.jpg)"><h3>segundo</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider113.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider111.jpg)"><h3>title</h3><p>asadad</p></div>  
+        </div>          
+    </div>
+    <div class="excursons-three">
+        <div class="accordion-button">
+            <h5>Pricing</h5>
+        </div>
+        <div class="accordion-content">
+            <div class="excursons-three-license">
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hours private tour</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Tile painting workshop</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Your painted tile, ready to hang</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Shipping of your tile</p>
+            </div>
+            <div class="excursons-three-prices">
+                <p>2 Adults <span>180€</span></p>
+                <p>Extra adult<span>30€</span></p>
+                <p>Extra Child<span>20€</span></p>
+            </div>
+        </div>
+        <div class="accordion-button further-information">
+            <h5>Further Information</h5>  
+        </div> 
+        <div class="accordion-content">
+            <div class="excursons-three-further">
+                <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+            </div>
+        </div>
+        <div class="accordion-button">
+            <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+        </div>
+        <div class="accordion-content"></div>
+    </div>  
+    <div class="excursons-four">
+        <div style="background-image: url(./img/page-sliders/slider111.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider112.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider113.jpg)"></div>   
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- this is the third topic inside the first page -->
+<div id="topic"  class="excursons">
+     
+    <div class="excursons-one">
+        <h1><span>ad</span>Historical Elevators</h1>
+        <p>Did you know that Bica elevator is installed in a seismic gap?</p>
+        <p>Lisbon is known as the city of the seven hills. To save inhabitants' legs from the constant up and down, four elevators were built. Each one is located in a different neighborhood, making part of the daily life of inhabitants.</p>
+        <p> On this tour, you will walk through different sections of the city, learning the historical and cultural significance of each one of them. You’ll visit the traditional sites and be immersed in the local flavor of Cais do Sodré, Bica, Bairro Alto, Chiado, Baixa and Torel. You’ll walk and wander through the narrow cobbled street, but not climbing, as we will use the elevators to get to the top of each hill.</p>
+        <p>One of the hidden gems of this area is Carmo Convent, a gothic monastery destroyed by the earthquake of 1755. The roof collapsed but the walls survived which transformed it into an open-air museum of medieval architecture. Imagine looking at impressive medieval monasteries… now imagine seeing the sky through its towering ogive arches!</p>
+        <p>So much more than a tour to view the elevators, this is a tour of four traditional neighborhoods, unveiling traditions and people.</p>
+        <p> After the tour you’ll receive a day ticket for Lisbon’s public transportation valid for another 20hours. It’s valid for city buses, subway and trams!</p>
+        <div class="icon-break"></div>
+    </div>
+    <div class="excursons-two">
+        <div class="excursons-two-slider">
+            <div style="background-image: url(./img/page-sliders/slider123.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider121.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider122.jpg)"><h3>segundo</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider123.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider121.jpg)"><h3>title</h3><p>asadad</p></div>    
+       </div>        
+    </div>
+    <div class="excursons-three">
+        <div class="accordion-button">
+            <h5>Pricing</h5>
+        </div>
+        <div class="accordion-content">
+            <div class="excursons-three-license">
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hours private tour</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Entrance fee to Carmo ruins</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Public transportation day ticket</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Taxi ride back to the hotel.</p>
+            </div>
+            <div class="excursons-three-prices">
+                <p>2 Adults <span>160€</span></p>
+                <p>Extra adult<span>30€</span></p>
+                <p>Extra child<span>10€</span></p>
+            </div>
+        </div>
+        <div class="accordion-button further-information">
+            <h5>Further Information</h5>  
+        </div> 
+        <div class="accordion-content">
+            <div class="excursons-three-further">
+                <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+            </div>
+        </div>
+        <div class="accordion-button">
+            <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+        </div>
+        <div class="accordion-content"></div>
+    </div>
+    <div class="excursons-four">
+        <div style="background-image: url(./img/page-sliders/slider121.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider122.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider123.jpg)"></div>   
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- this is the fourth topic inside the first page -->
+<div id="topic"  class="excursons">
+   
+    <div class="excursons-one">
+        <h1><span>ad</span>Old-fashioned shopping tour</h1>
+        <p> If you look very close you can still find some old traditional shops, hiding between neon lights and big billboards. Lisbon is known for them.</p>       
+        <p>  Shop like a local and join us on a tour through some of the oldest shops in Lisbon. Many of them have been open for over one hundred years and don’t fear the competition from international franchising.</p>
+        <p> Try on a pair of gloves while holding your elbow in a little pillow, in a glove shop smaller than your closet. Smell and taste some of Lisbon’s finest freshly ground coffee. Learn the history behind pharmacy doors that have been open for over 100 years. Or treat yourself like royalty buying jewelry from the jewelry shop that used to supply the Portuguese kings.</p>
+        <p>During this walking tour you’ll be taken around Lisbon’s historical center, with a special focus on the old traditional shops. Shops where the old man who sits behind the counter knows every customer by the name. Bring your shopping list and let us know if you're looking for something specific.</p>
+        <p> You'll be able to find the most unique, special items and unforgettable souvenirs.</p>
+        <div class="icon-break"></div>
+    </div>
+
+    <div class="excursons-two">
+        <div class="excursons-two-slider">
+            <div style="background-image: url(./img/page-sliders/slider133.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider131.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider132.jpg)"><h3>segundo</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider133.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider131.jpg)"><h3>title</h3><p>asadad</p></div>     
+        </div>        
+    </div>
+
+    <div class="excursons-three">
+        <div class="accordion-button">
+            <h5>Pricing</h5>
+        </div>
+        <div class="accordion-content">
+            <div class="excursons-three-license">
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hours private tour</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+            </div>
+            <div class="excursons-three-prices">
+                <p>Up to 4 adults <span>150€</span></p>
+                <p>Extra adult<span>20€</span></p>
+                <p>Extra child<span>Free</span></p>
+            </div>
+        </div>
+        <div class="accordion-button further-information">
+            <h5>Further Information</h5>  
+        </div> 
+        <div class="accordion-content">
+            <div class="excursons-three-further">
+                <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+            </div>
+        </div>
+        <div class="accordion-button">
+            <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+        </div>
+        <div class="accordion-content"></div>
+    </div>
+
+    <div class="excursons-four">
+        <div style="background-image: url(./img/page-sliders/slider131.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider132.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider133.jpg)"></div>      
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- this is the fifth topic inside the first page -->
+<div id="topic"  class="excursons">
+   
+    <div class="excursons-one">
+        <h1><span>ad</span>Old town walking tour</h1>
+        <p>Wander through the most charming streets of Lisbon. Learn the stories behind every corner of every neighborhood. Listen to the Fado, try some baked chestnuts or some cherry liquor. Discover what this city is about.</p>       
+        <p>Get lost in Alfama! Lisbon’s oldest district is known for the narrow streets and small houses where people still hang their underwear in the balcony. Once inhabited by sailors and fisherman, today it is a gentrified neighborhood where kids still play ball in the streets.</p>       
+        <p>The culturally curious will love the area around Sé (cathedral) as it boasts the oldest church of Lisbon. Nearby, Catholics can see the room where St. Antony was born and Jewish people can learn about a former synagogue.</p>       
+        <p>Experience the hustle and bustle of Baixa, the lively heart of Lisbon where all kinds of shops, peoples and architecture can be seen. View the river from Comercio square, listen to some street Fado or try some local liquor. Baixa will make you feel renewed.</p>       
+        <p>Relax after a full afternoon in Chiado. Lisbon’s most fashionable neighborhood is filled with old fancy boutiques where locals love to shop. Sit in one of the oldest cafés, watch who passes by and chances are, you’ll see someone you know.</p>       
+        <p>A tour that shows you and lets you experience the heartbeat of Lisbon.</p>          
+        <div class="icon-break"></div>
+    </div>
+    <div class="excursons-two">
+        <div class="excursons-two-slider">
+            <div style="background-image: url(./img/page-sliders/slider143.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider141.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider142.jpg)"><h3>segundo</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider143.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider141.jpg)"><h3>title</h3><p>asadad</p></div>         
+        </div>        
+    </div>
+    <div class="excursons-three">
+        <div class="accordion-button">
+            <h5>Pricing</h5>
+        </div>
+        <div class="accordion-content">
+            <div class="excursons-three-license">
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hours private tour</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+            </div>
+            <div class="excursons-three-prices">
+                <p>Up to 4 adults <span>150€</span></p>
+                <p>Extra adult<span>20€</span></p>
+                <p>Extra child<span>Free</span></p>
+            </div>
+        </div>
+        <div class="accordion-button further-information">
+            <h5>Further Information</h5>  
+        </div> 
+        <div class="accordion-content">
+            <div class="excursons-three-further">
+                <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+            </div>
+        </div>
+        <div class="accordion-button">
+            <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+        </div>
+        <div class="accordion-content"></div>
+    </div>
+    <div class="excursons-four">
+        <div style="background-image: url(./img/page-sliders/slider141.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider142.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider143.jpg)"></div>       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- this is the sixth topic inside the first page -->
+<div id="topic"  class="excursons">
+   
+    <div class="excursons-one">
+        <h1><span>ad</span>Lisbon with kids</h1>
+        <p>Bringing your kids to Lisbon doesn’t need to be a nightmare. Depending on your kids’ age, we can easily create a program fun for kids and interesting for adults.</p>
+        <p>We can combine attractions such as:</p>
+        <p>- St George castle, exploring the wall walks</p>
+        <p>- Alfama, wondering around the narrow streets and leting your kids lead the way</p>
+        <p>- Lisbon’s aquarium</p>
+        <p>- Tile workshop</p>
+        <p>- Cooking class oriented for kids</p>
+        <p>And much more.</p>
+        <p>Child seats and booster seats provided free of charge. The itinerary is totally flexible and includes as many breaks as needed. </p>
+        <div class="icon-break"></div>
+    </div>
+
+    <div class="excursons-two">
+        <div class="excursons-two-slider">
+            <div style="background-image: url(./img/page-sliders/slider153.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider151.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider152.jpg)"><h3>segundo</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider153.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider151.jpg)"><h3>title</h3><p>asadad</p></div>        
+        </div>        
+    </div>
+
+    <div class="excursons-three">
+        <div class="accordion-button">
+            <h5>Pricing</h5>
+        </div>
+        <div class="accordion-content">
+            <div class="excursons-three-license">
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+            </div>
+            <div class="excursons-three-prices">
+               <p>Up to 2 adults<span>280€</span></p>
+                <p>Up to 4 adults<span>300€</span></p>
+                <p>Kids under 12<span>free</span></p>
+                <p>From 12 to 16<span>50% off</span></p>
+            </div>
+        </div>
+        <div class="accordion-button further-information">
+            <h5>Further Information</h5>  
+        </div> 
+        <div class="accordion-content">
+            <div class="excursons-three-further">
+                <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+            </div>
+        </div>
+        <div class="accordion-button">
+            <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+        </div>
+        <div class="accordion-content"></div>
+    </div>
+
+    <div class="excursons-four">
+        <div style="background-image: url(./img/page-sliders/slider151.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider152.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider153.jpg)"></div>    
+    </div>
+
+</div>
+
+
+<!-- this is the seventh topic inside the first page -->
+<div id="topic"  class="excursons">
+   
+    <div class="excursons-one">
+        <h1><span>ad</span>Jewish Heritage</h1>
+        <p>During this 4 hours walking tour you’ll be able walk through the main highlights of Lisbon’s historical center while learning the untold story of the Jewish presence in Lisbon.</p>       
+        <p>Walk through Rossio square, Chiado, Baixa, Alfama and Comercio square. While this can be your orientation walking tour of Lisbon, the main focus will be the Jewish presence in these areas, the layout of the streets and what once happened in each place. Stand where the terrible massacre of 1506 occurred and understand how and why it happened. Did you know that in medieval times there were two Jewish communities, so important they’d answer directly to the king? Walk by those areas and discover what they became today. Listen to quotes from “The last Kabbalist of Lisbon”, a real story, while stepping those same streets.</p>       
+        <p>Discover the importance of the Jewish community for the age of discoveries and how the expulsion of 1496 is linked to the decay of Portugal itself. Learn how the need to blend-in made “new-Christians” create a Kosher sausage that is still enjoyed by Catholics today. More recently, we were the safe place for those fleeing from central Europe, having our own “Oskar Schindler”, Aristides Sousa Mendes. Different earthquakes, as well as the Catholic Inquisition, destroyed most of the physical Jewish presence but the story can still be told.</p>       
+        <p>Have more time in Lisbon? Then make this a full day tour and cover the whole city. Drive by Lisbon's synagogue, visit the 19th century Jewish cemetery and tour Belem. You'll cover all the highlights of a regular city tour while learning the information that matters to you. </p>       
+        <p>Four hours walking tour, accessible for all paces.</p>       
+        <div class="icon-break"></div>
+    </div>
+    <div class="excursons-two">
+        <div class="excursons-two-slider">
+            <div style="background-image: url(./img/page-sliders/slider163.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider161.jpg)"><h3>primeiro</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider162.jpg)"><h3>segundo</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider163.jpg)"><h3>title</h3><p>asadad</p></div>
+            <div style="background-image: url(./img/page-sliders/slider161.jpg)"><h3>title</h3><p>asadad</p></div>  
+        </div>        
+    </div>
+    <div class="excursons-three">
+        <div class="accordion-button">
+            <h5>Pricing</h5>
+        </div>
+        <div class="accordion-content">
+            <div class="excursons-three-license">
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hour private tour</p>
+                <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+            </div>
+            <div class="excursons-three-prices">
+                <p>Up to 4 adults <span>150€</span></p>
+                <p>Extra adult<span>20€</span></p>
+                <p>Extra child<span>free</span></p>
+            </div>
+        </div>
+        <div class="accordion-button further-information">
+            <h5>Further Information</h5>  
+        </div> 
+        <div class="accordion-content">
+            <div class="excursons-three-further">
+                <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+            </div>
+        </div>
+        <div class="accordion-button">
+            <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+        </div>
+        <div class="accordion-content"></div>
+    </div>
+    <div class="excursons-four">
+        <div style="background-image: url(./img/page-sliders/slider161.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider162.jpg)"></div>
+        <div style="background-image: url(./img/page-sliders/slider163.jpg)"></div>      
+    </div>
+
+</div>
+
+ 
+</section>
+
+
+
+
+<section class="page2">
+  
+
+
+    <!-- this is the first topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Lisbon and Sintra</h1>
+            <p>One day in Lisbon, but want to see it all? This is the right tour for you!</p>       
+            <p>We'll start our morning enjoying Lisbon and visiting it's most interesting sights, perhaps walking a bit around Alfama, see some tile-painting factory or having a sip of Port wine, or doing a panoramic tour by car. Then we'll head to Belém where we can visit St Jerome monastery, tower of Belém and discoverers monument.</p>
+            <p>After this great quantity of history, culture and monuments what you need is a bit of relax!</p>
+            <p>Let's head to Cascais (a small town really attached to the Atlantic) and have lunch there. After lunch we'll pass Guincho beach and finally get to Sintra. Here we can simply enjoy it's small streets or also to pick one of the many palaces to visit.</p>
+            <p> In both ways we'll cross the Natural Park of Sintra Cascais and visit Sintra, walking around it's small streets and trying the famous "travesseiros".</p>
+            <p>Advisable for costumers with few time. If you have two days, please consider having two separate tours, as you'll have more time to enjoy both places. </p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider203.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider201.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider202.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider203.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider201.jpg)"><h3>title</h3><p>asadad</p></div> 
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Full day(8h) private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned minivan</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Wifi</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>350€</span></p>
+                    <p>Up to 4 people<span>400€</span></p>
+                    <p>Up to 6 people<span>450€</span></p>   
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider201.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider202.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider203.jpg)"></div>          
+        </div>    
+     
+    </div> 
+    
+    
+    
+    
+    
+    
+    <!-- this is the second topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Sintra and Cascais</h1>
+            <p>Chosen in the XIVth century as summer residence for the Portuguese kings, and in the XIXth century as the capital of the romanticism, Sintra was called by Lord Byron as “My glorious Eden”.</p>       
+            <p>The uniqueness of the landscape, the weird trees that grow only there, and the perfect integration between man and nature convinced Unesco to declare Sintra as World heritage.</p>  
+            <p> This is a small town between the mountain and the Ocean, with an unique ambience that can be felt only there, and a fresh air that purifies our lungs.</p>
+            <p>Here we'll have time to visit one Palace at your choice: the unique and medieval National Palace, the fairy-tale Pena Palace or the mystic Regaleira mannor house. We'll also walk a bit around we won't leave before you taste the regional sweet: a subtle crust filled with almonds and eggs cream, the best sweet you ever tried!</p>
+            <p>Leaving Sintra we'll cross the National Park of Sintra Cascais, for a small stop at Rocca Cape, the western most point of Continental Europe. We'll arrive at Cascais just on time to have lunch, having the chance to taste the great fresh fish and sea food from there. After lunch there will be time to lie on the beach, to go for a walk, or to cycle a bit around (for free). Before leave to Lisbon we'll visit the “Mouth of hell”, a small cliff that creates a “mouth”, and when the sea is stormy, getting inside there creates huge waves.</p>
+            <p>As we love the Ocean, we'll go back to Lisbon through a panoramic road all coastline long, letting us see all the beaches from Cascais to Lisbon, and the exact point where the river and the ocean get together.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider213.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider211.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider212.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider213.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider211.jpg)"><h3>title</h3><p>asadad</p></div>     
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Full day private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned minivan</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Wifi</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>       
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>330€</span></p>
+                    <p>Up to 4 people<span>350€</span></p>
+                    <p>Up to 6 people<span>400€</span></p>   
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider211.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider212.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider213.jpg)"></div>   
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the third topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Obidos and Ericeira</h1>
+            <p>Did you know that “Obidos” means “fortified city” in Latin? The name speaks for itself.</p>       
+            <p>Famous for the narrow streets with whitewashed walls, colorful bougainvillea spilling over from the balconies and the endless handicraft shops, Obidos has always retained its authenticity over time.</p>     
+            <p>Once you get tire of “Kings and Queens” we’ll follow to Ericeira, a quaint fisherman town. While Ericeira claims to be the birthplace of surfing in Portugal, fishing still is the primary economic activity.</p>
+            <p>From this cliff we can see fishing boats and tools, as well as the small white washed houses. Feeling hungry? Delight yourself with the catch of the day.</p>
+            <p>After lunch, discover a miniature town created exclusively by the hands of a local potterman, depicting the regional culture.</p>
+            <p>Visit the church of Mafra’s monastery, a gem of the Portuguese architecture. Sculpted in Portuguese white and pink marble, it boasts over 4500 doors and windows. If you happened to read the romance “Baltasar and Blimunda” by Jose Saramago, you will want to visit the interior as well.</p>
+            <p>To finish the day we can visit a winery and do a wine tasting – optional.</p>
+            <p>Relax and enjoy your day in the country and experience what the “real” Portugal is all about.</p>
+            <div class="icon-break"></div>
+        </div>
+    
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider223.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider221.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider222.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider223.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider221.jpg)"><h3>title</h3><p>asadad</p></div>     
+            </div>        
+        </div>
+    
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>8 hour private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned vehicle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Entrance fee to Mafra monastery, in case you decide to visit it</p>   
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>350€</span></p>
+                    <p>Up to 4 people<span>380€</span></p>
+                    <p>Up to 6 people<span>400€</span></p> 
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider221.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider222.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider223.jpg)"></div>       
+        </div> 
+       
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the fourth topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Evora, cork & wine</h1>
+            <p>Did you know that Portugal produces 60% of the cork in the world?</p>       
+            <p> Alentejo is a somewhat unknown region in the south of Portugal. Rolling fields of gold and green, dotted with clusters of cork oaks and occasional whitewashed houses.</p>     
+            <p>Évora is the main town in Alentejo, but it feels like a small village. In the morning, we’ll walk through the compact historical center, declared as a UNESCO World Heritage Site, and discover its unique attractions. Ancient Roman ruins, a chapel made entirely of bones, a statue of a pregnant Virgin Mary, cobbled streets, tasty pastries. This town has it all!</p>
+            <p>For the afternoon, you can choose from two programs:</p>
+            <p>A – Sample the regional cuisine in a local restaurant and visit a cork factory. Did you know that cork lasts longer than leather? Or that a tree needs top grow for 40 years until you can harvest its cork? You’ll learn everything about this attractive, sustainable natural resource during this tour.</p>
+            <p>B- Discover the delicious wines of the region while you enjoy a picnic lunch under the shade of cork oak trees on the grounds of a winery. Taste regional cheeses, smoked ham, bread, fruits, wine and other local delicacies bought in the Evora market. We call it a picnic but our guests call it’s a feast. While we clean up “the table” you’ll be taken on a tour of the winery, which ends with a complimentary tasting of 3 wines.</p>
+            <div class="icon-break"></div>
+        </div>
+    
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider233.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider231.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider232.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider233.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider231.jpg)"><h3>title</h3><p>asadad</p></div>    
+            </div>        
+        </div>
+    
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>8 hour private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Entrance fee to the Bones Chapel</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Program A also includes the visit to a cork factory</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Program B also includes a generous picnic lunch with local wines (water and soft drinks also available) and the visit to a winery followed by a wine tasting</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch on program A, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>360/450€</span></p>
+                    <p>Up to 4 people<span>400/500€</span></p>
+                    <p>Up to 6 people<span>450/550€</span></p>  
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider231.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider232.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider233.jpg)"></div>
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the fifth topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Fatima and surroundings</h1>
+            <p>Fatima is one of the most important shrines dedicated to Virgin Mary in the world and you’ll discover why!</p>       
+            <p>Discover the Sanctuary built where Virgin Mary appeared to three shepherds in 1917 and learn about the message she left. Visit the village and the houses where the children grew up and get a better understanding of the history behind Fatima.</p>     
+            <p>After an orientation tour of the sanctuary you’ll be given as much (or little) free time as you wish, allowing you to attend mass, light candles or buy rosary beads.</p>
+            <p>Once you are ready to leave there are other places that can fulfill our day.</p>
+            <p>Batalha Monastery – This gothic monastery was built in the 14th century to be the king’s pantheon. Carved in elaborate Gothic and Manueline architecture, it’s been classified as a world heritage site by UNESCO</p>
+            <p>Nazaré – Once known as a quaint fishing village where women wore seven skirts, today it is famous for its beaches and the biggest wave ever surfed.  You should definitely select fish on the lunch menu here!</p>
+            <p>Obidos – Enjoy a relaxed walk through this medieval town, built within the city walls. Known for its white washed houses, stone paved streets and strikingly colorful bougainvillea flowers, it’s also home to the famous cherry liquor served in a chocolate cup.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider243.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider241.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider242.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider243.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider241.jpg)"><h3>title</h3><p>asadad</p></div>  
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Full day private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>360€</span></p>
+                    <p>Up to 4 people<span>400€</span></p>
+                    <p>Up to 6 people<span>450€</span></p>  
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider241.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider242.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider243.jpg)"></div>    
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the sixth topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Arrabida: Wine, cheese & tiles</h1>
+            <p>Did you know that it’s forbidden to kill spiders in some wine cellars?</p>  
+            <p>Start the day crossing the river and enjoying the views from the 25 de Abril bridge. Enjoy the scenic drive through Arrabida Mountain, which will take us to Azeitão. This small village holds one of the oldest wineries in the world and one of the tastiest pastries too.</p>     
+            <p>Choose which pastry is your favorite by trying a couple regional sweets in a pastry shop that has been open for over a century. Afterwards, visit one of the oldest wineries in the world: Jose Maria da Fonseca. Learn everything about these wines and discover why it’s forbidden to kill spiders in the wine cellars. Delight your senses with a wine tasting and feel the caramelized taste of Moscatel in your mouth.</p> 
+            <p>After a relaxed petiscos “tapas” style lunch we will drive through the scenic sites of Arrabida Mountain and its beaches, allowing amazing photo opps. The day will follow with the visit to another small winery and wine tasting.</p>
+            <p> If nature and wildlife is your thing, we can skip the second winery and join a boat tour to catch a glimpse of the area’s wild dolphins. This family of dolphin lives wildly in the river and can be seen pretty much every day. You can’t swim with them but will be able to take some close-ups.</p>        <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider253.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider251.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider252.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider253.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider251.jpg)"><h3>title</h3><p>asadad</p></div>  
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>350€</span></p>
+                    <p>Up to 3 people<span>380€</span></p>
+                    <p>Up to 4 people<span>400€</span></p>
+                    <p>Up to 5 people<span>430€</span></p>
+                    <p>Up to 6 people<span>450€</span></p>  
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider251.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider252.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider253.jpg)"></div>     
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the seventh topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Fatima and Lisbon</h1>
+            <p> Are you in Portugal just for the day and trying to decide either to visit Lisbon or go to Fatima?</p>       
+            <p>Just choose both!</p>  
+            <p> We’ll start the day going straight to Fatima, where we’ll visit the whole sanctuary, specially the place where Our Lady appeared to the three little shepherds in 1917. You’ll also have some free time to pray, light candles and feel the atmosphere of the place.</p>   
+            <p>Once you feel ready we’ll hit the road back to Lisbon and do a panoramic tour of the center, passing through Avenida da Liberdade, Rossio, Baixa, Chiado, Belém area… well, we’ll visit as much as we can, according to the available time. Since we’ll be in Lisbon and the dock is really close to the center, you don’t have to worry about being late for the ship!</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider263.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider261.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider262.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider263.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider261.jpg)"><h3>title</h3><p>asadad</p></div>      
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>8 hour private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned vehicle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>350€</span></p>
+                    <p>Up to 4 people<span>375€</span></p>
+                    <p>Up to 6 people<span>400€</span></p> 
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider261.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider262.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider263.jpg)"></div>      
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the eight topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Chasing the Templar Knights</h1>
+            <p>Want to embark on a historical journey shrouded in mystery? Of course you do! Today, we’re off to chase the ghosts of the famed Templar Knights. </p>  
+            <p>The Templars were a wealthy Catholic military order dating back to the 12th century. Always costumed in distinctive white hoods bearing a single red cross, the Templars were a powerful and feared force, closely tied to the crusades and known for its secret ceremonies.</p>
+            <p>First, we’ll visit Tomar, an ancient town and former religious center of the Templar Knights. We’ll explore the hallowed halls of the Convento de Cristo, which is considered one of Portugal’s greatest monuments. In Tomar's small historical center we can also find an old synagogue, open to the public, which survived centuries of inquisition.</p>
+            <p> Then, we’ll enjoy a short boat ride to Almourol Castle, a medieval masterpiece full of lore and legend perched on a tiny rocky outcrop in the middle of the Tagus River.</p>
+            <p>We’ll finish the day at an expansive property in the Tejo region. This is also home to handsome horse stables, as the estate originated as a stud farm breeding Lusitano horses for carriages, bull fighting and dressage. After a tour of the estate we’ll sip and savor the local wines paired with some light snacks.</p>
+            <div class="icon-break"></div>
+        </div>
+    
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider273.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider271.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider272.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider273.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider271.jpg)"><h3>title</h3><p>asadad</p></div>        
+            </div>        
+        </div>
+    
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Full day private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned minivan</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Entrance fee to Almourol and Tomar castles</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Visit to a regional Estate and winery tasting wines as well as regional products</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>420€</span></p>
+                    <p>Up to 4 people<span>480€</span></p>
+                    <p>Up to 6 people<span>530€</span></p>
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider271.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider272.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider273.jpg)"></div>    
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- this is the ninth topic inside the second page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Hiking in Sintra</h1>
+            <p>Sintra’s mountain offers an incredible variety of natural scenery, combining mountain, wild life, ocean views, harsh and not so hard tracks, suitable for everyone. The proximity with the Atlantic Ocean and the microclimate generates such diverse landscapes that Unesco declared it as a World Heritage site.</p>
+            <p>During this hiking trip you’ll have the opportunity to hike through some of the most secluded and lesser known areas of Sintra. Listen to the birds, feel the breeze against the trees and relax. You’ll hardly see a person around, even though Sintra is famous for the crowds.</p>       
+            <p>Every itinerary is created specifically for each tour ensuring that the fitness level and distance are the most appropriate for the client. Don’t worry about getting exhausted, we can adjust itinerary as we go. You may feel out of breath due to the landscape, not the pace. If you’re a serious hiker, or runner, please let us know, this tour is suitable for you too.</p>
+            <p>After hiking all morning, relax in the car while driving along the coast and find the perfect place for a much deserved lunch or drink. The day will continue with a visit to Cabo da Roca, the westernmost point of Continental Europe, for stunning views. Then we’ll find our way back to Lisbon driving along Cascais, Estoril and see the point where the Tagus flows into the Atlantic Ocean.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider283.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider281.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider282.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider283.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider281.jpg)"><h3>title</h3><p>asadad</p></div> 
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hour private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>350€</span></p>
+                    <p>Up to 4 people<span>400€</span></p>
+                    <p>Up to 6 people<span>450€</span></p>  
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider281.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider282.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider283.jpg)"></div>    
+        </div> 
+    </div>
+   
+    
+</section>
+
+
+<section class="page3">
+ 
+    <!-- this is the first topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Castles and wild horses</h1>
+            <p>Did you know that there are wild horses along Tagus river?</p>       
+            <p>If you're tired of big cities and want to see the real countryside, this tour is for you.</p>
+            <p>Almourol castle was built on the top of a small island, in the 12th century by the Templar knights. Aimed to stablish the border of Portugal in the river (900 years ago), was soon left with no use. Today you can only reach it by boat and you won’t have to fight for a seat in it as few people know about this magical castle.</p>  
+            <p>After climbing to the highest tower or simply walking through the island, we will drive through the country side and have lunch in a local restaurant by the river.</p>
+            <p>In the afternoon, we will relax in a small river cruise through inner areas of Tagus River, visiting islands only accessible by boat. One of them is “the island of the horses” where wild horses and birds can be seen. You’ll also learn about the “Avieiros”, a long gone nomadic fishing community. If you enjoy horseback riding we can do it instead of the river cruise. Just let us know once you book the tour.</p>
+            <p>On the way back to Lisbon we’ll take a national road, giving you the chance to see more wild animals or buy fruit directly from the farmers.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider303.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider301.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider302.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider303.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider301.jpg)"><h3>title</h3><p>asadad</p></div>  
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>8 hour private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Entrance fee to Almourol castle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>River cruise for about one and a half hours</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned vehicle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>340€</span></p>
+                    <p>Up to 4 people<span>370€</span></p>
+                    <p>Up to 6 people<span>400€</span></p>
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider301.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider302.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider303.jpg)"></div>
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the second topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Trail Running Day Trip</h1>
+            <p>Sintra’s mountain offers an incredible variety of natural scenery, combining mountain, wild life, ocean views, harsh and not so hard tracks, suitable for all runners. Either if you want to run for a couple hours or all day, our guide will be happy to design a track that suits your needs.</p> 
+            <p>Our guide will pick you in your hotel lobby and drive you to the mountain. Having discussed your interests and pace beforehand, we’ll warm up together and start an unforgettable trail run.</p>      
+            <p>It's a private tour: you set the distance and the pace. Feel free to stop at any time, either to catch your breath or to take some pictures.</p>       
+            <p> Bring only your shoes and flask and forget about the rest. Our guide will bring his camera and take pictures of you running through this unique mountain. He will also carry energy bars, first aid kit and other basics, you don’t need to worry about anything else.</p>
+            <p>Within 3days of your trail running tour you’ll receive an email with pictures, run report and gps track.</p>
+            <p>Travelling with someone who doesn’t enjoy running? We’ll be glad to suggest and organize an alternative activity for that person. Visiting Sintra itself or doing a cooking class that you can join afterwards are just suggestions.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider313.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider311.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider312.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider313.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider311.jpg)"><h3>title</h3><p>asadad</p></div>    
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Pick-up and drop-off in your hotel</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Experienced guide with first aid kit and energy bars/gels</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Run report, with pictures and GPS track</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Gratuities and non-mentioned items</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Upon request<span></span></p> 
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider311.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider312.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider313.jpg)"></div>     
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the third topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Porto & Douro valley (3days)</h1>
+            <p>3 days exploring the north of Portugal, enjoying a lush scenery and experiencing a different culture</p>       
+            <p>1st day - Porto is the 2nd biggest city and is proud to be different than Lisbon. Discover why walking through these cute narrow streets, carved out of baroque granite. Sip some Port wine in the old wine cellars, buy a book from the famous Lello bookshop, or simply relax in a river cruise and see everything from Douro river. We will drive from Lisbon in the morning and explore Porto in the afternoon.</p>   
+            <p>2nd day – Driving through the interior has its surprises. Roads blocked by herbs, chimneys always smoking or a beautiful waterfall just off the interstate. Start the day buying local crafts from the farmers market of Barcelos. You’ll find the best cheeses, tastiest smoked meats and beautiful pottery among live chicken and old-fashioned farming tools. Take a deep breath from all this in Bom Jesus de Braga, a monastery that will please even the atheists. Its setting on top of a hill offers incredible views of the region.</p>
+            <p>3rd day – Did you know that Port wine can only be produced in a small region of Portugal? During this day you’ll learn everything about Port wine and will obviously try some too. Port is produced in the valley of Douro river, which hills have been cut into slopes by different generations. At the distance it looks like someone passed with a comb though these hills. Spend the day touring different wineries, trying different wines and understanding what makes port so unique.</p>
+            <p>At the end of the day we’ll drive back to Lisbon or Porto, according to your preference.</p>
+            <div class="icon-break"></div>
+        </div>
+    
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider323.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider321.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider322.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider323.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider321.jpg)"><h3>title</h3><p>asadad</p></div>             
+            </div>        
+        </div>
+    
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>3 days of private tours</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned vehicle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>One hour river cruise</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Winery tour and wine tasting</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Accommodation in the hotel </p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Entrance fees should you choose to visit a museum</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>1200€</span></p>
+                    <p>Up to 4 people<span>1500€</span></p>       
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider321.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider322.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider323.jpg)"></div>    
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the fourth topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+    
+    <div class="excursons-one">
+            <h1><span>ad</span>One week</h1>
+            <p>Portugal is a compact country. It’s small in size, but from north to south, it’s landscape changes a lot, giving you the impression that you’re crossing several countries. If you’re planning your whole vacation in Portugal, Lisbon Stories suggests a rough itinerary for one week:</p>       
+            <p>1st day – Discover Lisbon on a full day tour.</p>
+            <p>2nd day – Enjoy the history of Sintra, the views from the westernmost point of Continental Europe and the beaches of Cascais.</p>
+            <p>3rd day– Let's go south and visit Evora. Learn everything about cork visiting a cork factory. Alternatively, discover what happened in Fatima in 1917 and spend the afternoon touring the medieval town of Obidos.</p>
+            <p>4th day – It’s time to drive to Porto. On the way we can stop in Fatima or, instead, have some seafood for lunch in Aveiro, known for its salt pans.</p>
+            <p>5th day – Understand what makes Port wine so unique by visiting Douro valley, where the wine is produced. Try different wines, learn the differences between each type and enjoy the views.</p>
+            <p>6th – Explore the very north of Portugal. Try a real farmers market in Barcelos, enjoy the views from Bom Jesus de Braga or enjoy the atmosphere in the historical town of Guimaraes.</p>
+            <p>7th day – Porto is very different than Lisbon and is proud of that. Discover why during this full day city tour. Finish the day driving back to Lisbon of flying out of Porto.</p>
+            <div class="icon-break"></div>
+        </div>
+    
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider333.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider331.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider332.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider333.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider331.jpg)"><h3>title</h3><p>asadad</p></div>            
+            </div>        
+        </div>
+    
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Upon demand<span></span></p>   
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider331.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider332.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider333.jpg)"></div>    
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the fifth topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Stop-Over Lisbon</h1>
+            <p>Did you know that in 2hours, by car, we can cover all the highlights of Lisbon?</p>       
+            <p>Sometimes your available time and your willingness to explore a city don’t match. If you just have few hours in Lisbon before an important business meeting, between flights or on a cruise, please let us know.</p>     
+            <p>Send us an email explaining you time constraint as well as your personal interests and we’ll be glad to create a customized itinerary able to combine everything. You can get inspired by our “Purely Lisbon” but you can also create your own tour.</p>
+            <p>You’ll see the most relevant sites within your schedule and at the end of the tour you'll be dropped off at the airport , pier, or any other location, free of charge (within Lisbon area).</p>
+            <p>You won't miss anything... not even your plane!</p>
+            <div class="icon-break"></div>
+        </div>
+    
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider343.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider341.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider342.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider343.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider341.jpg)"><h3>title</h3><p>asadad</p></div>             
+            </div>        
+        </div>
+    
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned vehicle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Entrance fees</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 6 people<span>250€</span></p>   
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider341.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider342.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider343.jpg)"></div>   
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the sixth topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+    
+    <div class="excursons-one">
+            <h1><span>ad</span>Your own tour</h1>
+            <p>The tours listed in this website are only suggestions. Each person is different and seeks different experiences and sights. </p>       
+            <p> If you liked Lisbon Stories reviews and would like to book a tour with us but couldn't find anything that suits your needs, please send us an email with your request. It doesn't need to be a specific one, a rough idea of what you like to do and see, your available time and special requests are enough. </p>     
+            <p> We'll get back to you within 24 hours with a customised itinerary, that you can then adjust to your wishes. What if you'd like to get lost in the mountains of the North, or spend some days under the sun of Algarve? No problem! All our guides are licensed and their license is valid in the whole country.</p>
+            <p>Make a wish. We'll make it happen.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>4 hour private tour</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>350€</span></p>
+                    <p>Up to 4 people<span>380€</span></p>
+                    <p>Up to 6 people<span>400€</span></p>       
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the seventh topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Historical Villages (3days)</h1>
+            <p>3 days exploring the historical villages</p>       
+            <p>1st day - Our first stop of the day is Idanha-a-Velha, a tiny town that doubles as an open air archeological museum. The town is situated where a former Roman city once stood in 1BC. Over time, it has been inhabited by Visigoths, Suebi, Muslims and Christians and was even donated to the Knights Templar in the 13th century. We’ll continue on to Monsanto, once deemed the Most Portuguese Town in Portugal. What’s so special about it? It’s perched high above the expansive valley below and is full of charm and character.</p>       
+            <p>2nd day – Belmonte has the strongest Jewish presence in all of Portugal, with an active community and Jewish museum. We’ll stroll the narrow streets past stone houses, charming churches and visit the town’s ancient castle. From here we'll travel back in time towards Sortelha, known as "the star of stone" due to the shape of its old wall. Around here time seems to have stopped and it will be easy to slow the pace while walking through these small streets. Then we'll take a stunningly scenic drive through the Serra do Açor mountain range.</p>     
+            <p> 3rd day – Coimbra is known for its university, the oldest in all of Portugal and the 8th oldest in the world. We’ll tour the campus complex, complete with a visit to the 18th century library and book vault. You might even spot some of the student guides sporting the traditional black wool capes from centuries past. Then we'll down the "back-breacking" hill and learn why this city was classified by Unesco as a world Heritage site. Finish the day in Coimbra or Porto.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider363.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider361.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider362.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider363.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider361.jpg)"><h3>title</h3><p>asadad</p></div>                 
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>University Campus and Library</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Entrance fee to Jewish museum in Belmonte</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Accommodation</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>1400€</span></p>
+                    <p>Up to 4 people<span>1600€</span></p>        
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider361.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider362.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider363.jpg)"></div>   
+        </div> 
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- this is the eight topic inside the third page -->
+    <div id="topic"  class="excursons">
+    
+    
+        <div class="excursons-one">
+            <h1><span>ad</span>Coimbra & central Portugal </h1>
+            <p>Join me as we journey outside of the city for an authentic adventure and I’ll share the stories, legends and the cultural traditions woven into Portugal’s endearing tapestry.</p>       
+            <p> 1st day - The University of Coimbra is the oldest in all of Portugal and the 8th oldest in the world, established in the 13th century. We’ll wander the hallowed halls and stroll past paintings of the college Deans dating back to the school’s inception. We’ll tour the campus complex and even visit the 18th century library and book vault. Perhaps you’ll even spot some of the student guides cloaked in traditional black woolen capes from centuries past. After so much history it will be time to drive by the country and explore the windmills of Penacova. Sit in one of the many terraces over Mondego river, the largest Portuguese river, and try a “Nevada”, a local pastry. Overnight in Coimbra.</p>     
+            <p> 2nd day – A short drive from Coimbra lies the ancient Bussaco Forest. Designed by Franciscan monks almost 400years ago, it had an important battle during the French invasions. Today it’s a peaceful, and gorgeous, botanical garden, perfect for a leisurely walk. Central Portugal is known for the suckling pig and we may have some for lunch. Afterwards, it will be time to visit Caves Aliança a wine cellar and museum. Visiting requires walking about a mile in the underground as this is the only national underground museum. Naturally, the tour finishes with a wine tasting. Return to Lisbon.</p>
+            <div class="icon-break"></div>
+        </div>
+        <div class="excursons-two">
+            <div class="excursons-two-slider">
+                <div style="background-image: url(./img/page-sliders/slider373.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider371.jpg)"><h3>prsdadeiro</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider372.jpg)"><h3>segundo</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider373.jpg)"><h3>title</h3><p>asadad</p></div>
+                <div style="background-image: url(./img/page-sliders/slider371.jpg)"><h3>title</h3><p>asadad</p></div>                   
+            </div>        
+        </div>
+        <div class="excursons-three">
+            <div class="accordion-button">
+                <h5>Pricing</h5>
+            </div>
+            <div class="accordion-content">
+                <div class="excursons-three-license">
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Licensed tour guide</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Personal accident insurance</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Transportation in air-conditioned vehicle</p>
+                    <p><span style="background-image: url(./img/icons/certificate-valid.svg)">a</span>Entrance fee for Coimbra University and Library the Bussaco Garden and an Winery tour with wine tasting</p>
+                    <p><span style="background-image: url(./img/icons/certificate-invalid.svg)">a</span>Lunch, drinks and souvenirs</p>
+                </div>
+                <div class="excursons-three-prices">
+                    <p>Up to 2 people<span>900€</span></p>
+                    <p>Up to 4 people<span>1000€</span></p>              
+                </div>
+            </div>
+            <div class="accordion-button further-information">
+                <h5>Further Information</h5>  
+            </div> 
+            <div class="accordion-content">
+                <div class="excursons-three-further">
+                    <p>Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time.</p>
+                    <p>You will be taken on a walking tour that can be shortened and will adjust to your needs</p>
+                </div>
+            </div>
+            <div class="accordion-button">
+                <h5 onclick="redirectPage(6,0)">Questions & Bookings</h5>
+            </div>
+            <div class="accordion-content"></div>
+        </div>
+        <div class="excursons-four">
+            <div style="background-image: url(./img/page-sliders/slider371.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider372.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider373.jpg)"></div>     
+        </div> 
+    
+    </div>
+    
+</section>    
+
+
+
+<section class="page4">
+ 
+    <!-- this is the FaQ inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>FAQs</h1>
+            <h3>Booking the tour</h3>
+            <p>In order to confirm your booking we just need a 50€ deposit per tour. This deposit can be sent with your credit card, by Paypal, bank transfer or any other method at your convenience.</p>
+            <h3>Cancellation policy</h3>
+            <p>If you need to cancel your tour you can ask for a deposit refund. You are eligible if it’s still missing 60 days to the tour or this cancellation is caused by an act of god certified by a 3rd party. If the bad weather doesn’t allow your cruise to dock or plane to land, we understand that it’s not your fault and you will get your money back.</p>
+            <p>Tours cancelled within 30 days of the start date will receive a gift certificate of the deposit. This gift certificate can be used as a deposit for another tour with Lisbon Stories within 2years.</p>
+            <h3>Guides</h3>
+            <p>All our tours are conducted by a licensed guide, incredibly fluent in your language. We ONLY work with guides licensed and certified by the Official Tourism Board and previously tested by Catia. Needless to say that they are passionate about their country and culture, professional and love what they do.</p>
+            <h3>Kids</h3>
+            <p>Lisbon Stories is a child friendly company. Booster seats can be arranged with no extra charge and children up to 12 years old travel for free, as long as accompanied by one adult. Please let us know how many children are you travelling with and how tall are them so that we can arrange booster seats.</p>
+            <h3>Prices</h3>
+            <p>All our prices include the services of a licensed tour guide, taxes and personal accidents insurance.</p>
+            <p>Please read the tour description carefully as different tours include different extras. Unless mentioned no tour includes lunch nor gratuities.</p>
+            <h3>Shore excursions</h3>
+            <p>Most of our tours can be enjoyed as a shore excursion. Let us know on which ship are you sailing and let us handle everything. Your tour will start right from the pier and the itinerary will be designed making sure that we get closer to the ship as the day gets closer to the end. You’ll be dropped-off at the ship one hour before it departs, just to be safe.</p>
+            <p>In six years we never got anyone left behind. You won’t be the first one.</p>
+            <h3>Transportation</h3>
+            <p>All our full day tours include transportation in a modern and comfortable vehicle with air-conditioning. Our favorite car is a Volkswagen Sharan produced in Portugal. It seats seven people comfortably or four people and their generous luggage. It had automatic slide doors and tinted windows, individual air-conditioning control and many other features perfect for touring.</p>
+            <p>Bigger or smaller groups can ask for a different car. Fees may apply.</p>
+            <p>If you'd like your tour to be delivered in another vehicle, please ask.</p>
+        </div>
+        <div class="information-four">
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    <!-- this is the About inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>About Lisbon Stories</h1>
+            <p> Lisbon stories is the personal project of a Licensed tourist guide, Catia. </p>
+            <p>Working as a free lancer local guide for the biggest travel agencies, in 2009 I found myself with a reduced number of bookings. Instead of singing some Fado about my life, I decided to launch my own project. </p>
+            <p>I've always felt sorry for my clients sitting in big bus tours and though that private, customizable tours were the way to go. Everyone should be able to enjoy Lisbon from a unique, personal perspective. Everyone should be able to feel they belong to the city... and that's how Lisbon Stories was born.</p>
+            <p>Today me and my team deliver private tours in comfortable cars, giving each client the opportunity to discover an unique city and country, full of memorabble experiences.</p>
+            <p>All the tours were created specially for this website, thinking about your interests and quality of time during your holidays. They're all customizable and if you want something different, you're more than welcome to explain your ideas.</p>
+            <p> In short, Lisbon stories is a project to make you feel like you belong to the city, ensure high quality private tours; no crowds, whispers or flags; just you and those you like. Lisbon stories, belong to the city!</p>
+    
+        </div>
+        <div class="information-two">
+            <div style="background-image: url(./img/page-sliders/slider412.jpg)"></div>
+            <div style="background-image: url(./img/page-sliders/slider413.jpg)"></div>
+        </div>
+        <div class="information-three">
+            <h3>ABOUT CATIA</h3>
+            <p>I was born and raised in Sintra and I've always enjoyed meeting new people. </p>
+            <p>I took a degree in Tourism Information and a spcialization in Sustainable Tourism but I must say that I acquired my biggest education during some experiences working abroad, in hospitality, as well as some time travelling on my own.</p>
+            <p>In 2007 I became a Licensed Guide and started working as a free-lancer for the biggest and most known travel agents and tour operators. </p>
+            <p>In 2009 life gave me some lemons and I decided to reply not with lemonade, but with Lisbon Stories!</p>
+            <p>I'm fluent in Portuguese, English, Italian, Spanish and French and I'm entitled to give tours in the whole country. </p>
+            <p>I'm the manager of Lisbon Stories but I must admitt that my passion is showing Portugal to visitors from all over the world. </p>
+            <p>Come, you won't regret!</p>
+    
+        </div>
+        <div class="information-four">
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- this is the Traveling with Kids inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Travelling with kids</h1>
+            <p>Did you know that Portugal is considered a family-friendly country?</p>
+            <p>Bringing your kids to Lisbon doesn’t need to be a nightmare. Depending on your kids’ age, we can easily create a program fun for kids and interesting for adults.</p>
+            <p>We can combine attractions such as:</p>
+            <p>- St George castle, exploring the wall walks</p>
+            <p>- Alfama, wandering around the narrow streets, letting your kids lead the way</p>
+            <p>- Lisbon’s aquarium</p>
+            <p>- Tile workshop</p>
+            <p>- Cooking class oriented for kids</p>
+            <p>And much, much more.</p>
+            <p>Child seats and booster seats are provided free of charge.</p>
+            <p>The itinerary is totally flexible and can be easily changed up to the day of. We can stop as often as needed, either to play in a park, have a snack or just take a nap.</p>
+            <p>Our prices are child-friendly too:</p>
+            <p>Kids under 12: free.</p>
+            <p>Kids between 12 and 18: 50% discount.</p>
+            <p>Discounts apply during slow season, from October to May. </p>
+        </div>
+        <div class="information-four">          
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- this is the whats a licensed guide inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>What's a licensed guide?</h1>
+            <p>In Portugal until few years ago only licensed guides were allowed to do guided tours inside National Monuments and World Heritage Sights.</p>
+            <p>While today this isn't a strict obligation, we only work with guides with this kind of certification. Other companies may drive you to the site, give you a few comments and leave you at the door with some free time. Lisbon Stories' guides  park the car and walk with you inside the attraction you wish to visit. We guide you through your favorite palace or museum combining history and stories, helping you to understand what’s so special about it.</p>
+            <p>What does it take to be a licensed guide?</p>
+            <p>Licensed tour guides have a degree in Tourism Information or History after which they did a specific oral exam. This oral exam is done in three different languages and is conducted by university professors and other relevant people for the tourism in Portugal. During one hour examinees can be asked every and anything about Portugal: gastronomy, heritage, traditions, architecture, you name it.</p>
+            <p>After one is approved we get a golden badge like this. Only licensed tour guides ca wear it and it grants them free admission in all monuments in Portugal, as well as fast track entrance for their groups.</p>
+            <p>For licensed tour guides this isn’t a summer or part time job. We went through several stages of preparation and this is our passion. Our goal is to make every visitor fall in love with the beauty and history of our country. We make part of your long lasting memories.</p>
+            <p>Lisbon Stories only works with licensed tour guides. This project was created by Catia, a licensed tour guide since 2007. Being a tour guide she knows how to select the best guides and she makes sure to invite only the best ones to work at Lisbon Stories.</p>
+            <p>That’s the way we work!</p>
+        </div>
+        <div class="information-four">      
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- this is the Gift Certificates inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Gift certificates</h1>
+            <p>Are you looking for a different gift for someone special?</p>
+            <p>Offer an unforgettable private tour experience in Portugal, something that will bring long lasting memories.</p>
+            <p>Offering a Lisbon Stories gift certificate couldn’t be easier:</p>
+            <p>1- Choose your favorite tour.</p>
+            <p>2- Contact us and purchase the requested tour.</p>
+            <p>3- We’ll email you the gift certificate the same day.</p>
+            <p>4- Give it and prepare yourself to receive a big hug!</p>
+            <p>Our Gift Certificates don't expire and since you offer the tour and not an amount of money, the person will never know the price of your gift. </p>
+            <h3> Did you receive a Lisbon Stories' gift certificate?</h3>
+            <p>Please send us a direct email stating the gift certificate code and your desired date. We'll get back to you withing 24 hours, confirming your tour.</p>
+            <p>Have you already been to the place of your tour, or would prefer to trade it for another tour? No problem. Let us know which tour would you like to book and we'll give you the instructions to pay the remaining balance.</p>
+    
+        </div>
+        <div class="information-four">       
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    <!-- this is the reviews inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Reviews</h1>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/en.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r636931290-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">Maurice K</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(3,3)">One week</h3></div>
+                <p>"Catia is a very professional guide , she speaks fluent English ( among 7 other languages ) , she knows information about all the places that we visited and answered all our questions happily . She used to walk and visit with us all the monuments and chapels , to make sure that we get all the necessary information . She drives very safely and we were very comfortable the whole time . " </p>
+                <h5>Nov 11/18</h5>      
+            </div>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/us.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r633415792-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">Apopkab</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(3,5)">Your own tour</h3></div>
+                <p>"My husband and I visited Portugal for the first time in October. We had 5 nights there and I wanted to get the most out of our short visit. Catia proposed a perfect itinerary for 4 of our 5 days. It started with picking us up at the airport on our arrival . She guided us around Lisbon, Sintra, Obidos, Coimbra, the Douro Valley and Porto before dropping us off in Porto for our final day on our own. Hiring Catia was the best decision we made for our vacation! She had great ideas for what to see and do, she's funny and kind and so knowledgeable about her country. Her recommendations for restaurants were excellent and her services were invaluable! She did the driving, so we got to enjoy the scenery. I would recommend Catia and Lisbon Stories wholeheartedly if you are planning a trip to Portugal. You won't regret taking a tour with her."</p>
+                <h5>Nov 11/18</h5>
+            </div>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/us.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r600453944-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">Josette</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(2,3)">Evora, cork & wine</h3></div>
+                <p>"Catia took such good care of our whole family (6 of us) during our tours of Sintra (her home town), Lisbon, Evora and the cork factory, Guimarães, Bom Jesus De Braga, Douro Valley boat trip and winery tour, and Porto. Her knowledge of Portugal history was great, interesting, and informative. The leisurely lunches we all enjoyed together were so refreshing and fun. We highly recommend Catia Louis’s services."</p>
+                <h5>Jul 7/18</h5>
+            </div>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/us.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r598551804-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">bhluv2travel</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(1,0)">Purely Lisbon</h3></div>
+                <p>"We toured Portugal last year with Catia..starting in Porto and ending in Lisbon. There was more that we wanted to see, so we returned to Lisbon this summer and again toured with Catia. The experience was just as rewarding. She took us on a walking tour of St. George castle and then a tile painting experience. We also went to Evora and a cork factory tour. All were interesting a lot of fun. <br> Just like last year, Catia is a delight to spend time with. It's like traveling with a niece or family member, who will show you the interesting places in her city...many times away from the touristy areas and into the hidden gems."</p>
+                <h5>Jul 7/18</h5>
+            </div>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/en.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r585326736-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">thomasgX7192WU</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(2,6)">Fátima and Lisbon</h3></div>
+                <p>"This was our first trip to Portugal and we chose Catia for a three day tour of the Lisbon area - one day in Lisbon and two days in Southern Portugal, including a visit to Fatima and her home town of Sintra (not to be missed). Caita picked us up at the cruise terminal (two couples). Her car is perfect for 4-5 passengers and she is an excellent driver. As a guide, we give her our top recommendation - she speaks excellent English, is energetic, fully engaged, knowledgeable, and she was always looking to make our trip special."</p>
+                <h5>Jun 6/18</h5>
+            </div>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/us.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r578546859-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">chrisnhoward</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(2,0)">Lisbon and Sintra</h3></div>
+                <p>"The four of us hired Catia for two days - first to see Sintra and the second for Lisbon. She is from Sintra which made her presentation extra special as she knew the history but also the recent evolution of the area. She drove us and it was clear it would have been a nightmare to try to do it ourselves. She picked us up right on time, made sure we were comfortable . She took us to a wonderful fish restaurant right on the beach where we had fresh fish- wenever would have found it. Thank you for two great days"</p>
+                <h5>May 5/18</h5>
+            </div>
+            <div class="reviews">
+                <h4><span style="background-image: url(./img/icons/br.png);">a</span><a href="https://www.tripadvisor.com.br/ShowUserReviews-g189158-d1818718-r553176552-Lisbon_Stories-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">Patricia R</a></h4>
+                <div>see their tour <span>a</span><h3 onclick="redirectPage(1,0)">Purely Lisbon</h3></div>
+                <p>"Catia was very knowledgeable about her country. She seemed to find the things we were interested in just by conversation. It was a great part of our trip and I would definitely want to do a tour with her in the future"</p>
+                <h5>Jan 1/18</h5>
+            </div>
+        </div>
+        <div class="information-four">          
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- this is the Shore excursions inside the May-i-help Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Shore excursions</h1>
+            <p>A good part of Lisbon visitors come on cruise ships and only have one day (sometimes less) to explore the city.</p>
+            <p>If this is your case, I imagine that you want to take the most out of your time here, seeing as much as you can but still with time to enjoy yourself.</p>
+            <p>Here are some of the most advisable tours for cruise visitors.</p>
+        </div>
+        <div class="information-two">
+            <div style="background-image: url(./img/page-sliders/slider102.jpg)" onclick="redirectPage(1,0)"><h4>Purely Lisbon</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider123.jpg)" onclick="redirectPage(3,4)"><h4>Stop-over Lisbon</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider201.jpg)" onclick="redirectPage(2,0)"><h4>Sintra</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider211.jpg)" onclick="redirectPage(2,1)"><h4>Cascais</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider212.jpg)" onclick="redirectPage(2,2)"><h4>Ericeira</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider281.jpg)" onclick="redirectPage(2,8)"><h4>Hiking in Sintra</h4></div>
+        </div>
+        <div class="information-three">
+            <p>If you're interested in any other tour, just let me know, and I'll be glad to customize it for you, adapting it to your cruise's schedule. </p>
+            <p><b>Please inform me also on which cruise do you come so that I can pick you at the pier and leave you back there at the end of the tour.</b> </p>
+            <p>You can be sure that you won't miss anything, not even the cruise!</p>
+        </div>
+        <div class="information-four">          
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<section class="page5">
+ 
+
+
+    <!-- this is the Basic information inside the Tips Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Basic Information</h1>
+            <p>When you’re travelling abroad you always have some questions and fears, especially when you don’t speak the language. To help you to overpass this, here are some basic tips: </p>
+            <p><b>911</b>: call 112 for any emergency from police to an ambulance. In case of personal injuries you'll be taken to a public hospital which offers a good service at a decent price. We have a national Welfare System.</p>
+            <p><b>Airport</b>: Lisbon airport is located within the city and just 20/30 minutes away from the centre. If you don’t have a transfer arranged, you can pick a cab and it shouldn’t cost more than 10/15€ (see Taxi). You can also go to the Tourism Information Point (take the chance and grab a map) and buy a taxi voucher, with an established price.</p>
+            <p><b>Coffee</b>: costs less than one dollar and Portuguese people can not live without it. This strong black expresso is an excellent excuse to chat with someone or to have a sweet. Ask for "café americano" to get an American coffee or “galão” to get a caffé latte. If someone is a bit grumpy, just go and buy them a coffee: our guide is not an exception.</p>
+            <p><b>Currency</b>: the old "Escudo" was replaced by the Euro (€) in 2002 and this is the only currency you can pay with. In Portugal ATMs (cashpoints) can be found almost everywhere and restaurants accept most credit cards: this is definitely the best way to carry your money.</p>
+            <p><b>Economy</b>: lies mostly on services and industry but agriculture and fishing are also important. Portugal is the world biggest producer of cork and also has an important production of olive oil, wine, canned food and leather shoes. Portugal may be slightly cheaper than other European countries and you may also hear the news saying that Portuguese economy is in bad shape. We're not at our's best but we aren't as bad as they say and a bad rating at the international markets doesn't stop us from having a normal life.</p>
+            <p><b>Electricity</b>: the electric current in Portugal is 230/400 volts at a frequency of 50 hertz and sockets comply with European standards. You will need a 230 volt transformer and an adaptor to use American-style flat-prong plugs.</p>
+            <p><b>English</b>: young people speak fluent English. In cities almost everybody will be able to communicate with you in English and the same applies to restaurants and central facilities. Portuguese population is generally helpful and will do their best to communicate with you using hand gestures, signs etc. In these cases please thank them with “Obrigado” (thank you) or “Bom dia” (good morning).</p>
+            <p><b>Language</b>: the official language is Portuguese, a latin language and the 5th most spoken language in the whole world. Though you may understand some words if you understand Spanish or Italian, it is offensive to speak Spanish right away thinking that we'll understand it. Portuguese and Spanish have been different languages for almost one thousand years, please don't try to change it now.</p>
+            <p><b>Safety</b>: Lisbon and Portugal are generally safe but this doesn't mean that you can walk around with your wallet on your back pocket or with your camera hanging on your hand, unattended. Anyway, the worse that may happen to you is being pickpocketed with no violence and you'll notice it only on your next buy. If this happens to you, go to the Tourism Police in Restauradores square (walk from Rossio square to Avenida da Liberdade and you'll find it on your left, in a pinkish palace, short after you pass Restauradores subway exit). This specialised police will be able to give you all the practical information and solve your problems. In short, Lisbon is just like any other big city: use your good sense; and if you're reading this article, I suppose you're having one tour with me: just ask for help during the tour!</p>
+            <p><b>Tax Free</b>: Portugal visitors that are not EU residents may be taxfreereimbursed for the VAT (Vallue Added Tax) they've paid on purchases that they have made in Portugal and are being transported in their personal luggage. When you're shopping, look for the Tax free logo on the shop window and ask the merchant for your receipt and special Tax free form. Keep that with you and get to the airport with time. You may either stamp your forms at customs and submit it later, or custom and receive your money on the moment. Please note that to be elegible you need to: buy more than 60,35€ in the same shop; leave EU within 30 days of your first bought;  carry the items with you. You'll receive aprox. 12% of the paid taxes. </p>
+            <p><b>Tipping</b>: is a normal procedure if you enjoyed the service or want to be polite. Normally we tip 10% of the bill, mostly to restaurant and hotel waitresses.</p>
+        </div>
+        <div class="information-four">
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- this is the Getting around inside the Tips Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Getting around</h1>
+            <h3>Inside Lisbon</h3>
+            <p><b>Public transportation -</b>before getting on, go to a subway station and buy the ticket on the automatic machine. Select “Buy ticket + card”, tViva viagemhen “Stored value” and then choose an amount to charge. You'll get a green ticket, valid for all the public transportation inside the city (subway, buses, trams and historical elevators) and it takes the money off every time you travel. Don't forget to validate the ticket each time you travel (just do what everyone does when they get on). The card itself costs 0,50€ but is rechargeable and you should keep the white receipt that comes with it: if there's a problem or you still have money when you leave, go to a counter and they will give you your money back. Using this card makes you save some money: while a normal trip with this card costs 0,90€, onboard fees may cost up to 3€ (imagine how many custards and ginginhas you can have with this money).  </p>
+            <p><b>Buses -</b>are all managed by “Carris”bus and are yellow. Just wave when the bus is coming and the driver will stop. Generally, buses don't have any light indicator showing where you're passing by. If you don't know where to stop ask the driver or someone's help. </p>
+            <p><b>Elevators -</b>may look like a tourist's thing, but they're not. elevadorThey were built over 100 years ago to help inhabitants to go from downtown to upper town, specially when carrying their groceries and long before cars were commonly used. This is probably the situation where it's most convenient to buy that green ticket before getting on – onboard ticket costs 3€.</p>
+            <p><b>Trams -</b>same than elevators. 28 tram is definitely the most known tram and covers a comprehensive part of the non-touristic old part of the city. If you don't want to miss this, my suggestion is to take it in the morning or tramat the end of the day, and NEVER if it's packed or you don't have a place to sit. If you stand you'll be just shaking inside and since you're eyes will be above the windows, you won't be able to see anything outside. Martim Moniz square is the starting point (take the one going to Campo de Ourique / Prazeres). Once you get to Prazeres you'll need to get off the tram and wait at the same place for the same tram (and pay another ticket). Since it's very popular among tourists, it is obviously popular among the pickpocketers: be aware!</p>
+            <p><b>Subway -</b>covers a comprehensive part of the city and runs from 6.30 a.m. to 1a.m. Is generally clean and all subway stations are decorated with tile panels painted by great Portuguese artists. </p>
+            <p><b>Taxis -</b>may have a cream colour or be black with a green luzroof, there's no difference among them. If you're trying to stop a cab in the middle of the road, pay attention to the upper light: if it's green, the cab is free. If it has a red number, then that taxi is busy. Don't take a cab in Rossio square: there's a taxi waiting point at the ttaxi begeop of the square: drivers waiting in the square itself are cheating on their colleagues and have questionable principles. The fare is shown on the taximeter and you should never pay more than what's written in red. In case of doubt you can call the police. The prices are affixed inside the car, back seat left side. If you phone for a taxi taxiyou have to pay an extra 0,80€ and 1,60€ for luggage, regardless of weight or number of pieces. Carry cots, pushchairs, wheelchairs and walking aids are carried free of charge. If you feel that you’re being ripped ask for an invoice “fatura”: you won't get any money back, but he'll pay a good part of it on taxes.</p>
+        </div>
+        <div class="information-two">
+            <div style="background-image: url(./img/page-sliders/slider512.jpg)"><h4>Bus</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider513.jpg)"><h4>Tram</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider121.jpg)"><h4>Elevator</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider514.jpg)"><h4>Taxi</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider515.jpg)"><h4>Metro</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider516.jpg)"><h4>Train</h4></div>
+        </div>
+        <div class="information-three">
+            <h3>Outside Lisbon</h3>
+            <p>If you want to go somewhere outside Lisbon you have three options: taking a <b>train</b> , taking a <b>bus</b> or renting a <b>car</b>.</p>
+            <p> The only <b>Train</b> company operating in Portugal is CP and  offers two types of long distance trains: Alfa and Intercidades.</p>
+            <p>Alfa is the most modern, most comfortable and of course, the most expensive. Stops only in Faro, Lisboa (Oriente subway station), Coimbra, Porto and Braga and takes you from Lisbon to Oporto in less than 3 hours.</p>
+            <p>The second chance is InterCidades, slightly less comfortable, slightly less fast but cheaper and also offers some connections with the Interior of the country (like Guarda, Covilhã or Beja). </p>
+            <p>In both cases tickets can be bought in some travel agencies, online or in “Jardim Zoológico”, “Entre Campos”, “Oriente” and “Santa Apolónia” train/subway stations. </p>
+            <p><b>International Trains</b> can be catched in Oriente train/subway station. There are direct services to Salamanca, Burgos, Madrid and Hendaye and connections with  other major cities like Barcelona or Paris. </p>
+            <p>Regarding <b>Buses</b>, there are several companies operating. If you're going to the North the best (newer buses, more lines and better schedules) is RedeExpressos. In case you're going to the South, Eva is the best one, for the same reasons.</p>
+            <p>Their terminal is the same and is located really close (1minute walking distance) to “Jardim Zoológico” subway station.</p>
+            <p>Tickets can be bought online or at the terminal and there are discounts for children and people over 65.</p>
+            <p>There are also several companies operating that <b>rent cars</b>, mostly the same biggies you can rent at home. </p>
+            <p>Almost all have pickup stations outside the airport, always with better rates - ask for this during the booking process as you can save 25€/day.</p>
+        </div>
+        <div class="information-four">
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- this is the Gastronomy inside the Tips Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Gastronomy</h1>
+            <p>In Portugal eating is a big thing. We have two main meals and at least two snacks during the day. Eating out is a common practice and a good excuse to meet family and friends. Lunch happens from noon to 2p.m. and takes around one hour. Dinner (from 8p.m. to 10p.m.) is a family or friends meeting and never takes less than 1,5 hours. Main meals have starters, soup, a big dish with fish and potatoes or meat and rice and often finishes with a desert. Snacks (breakfast and something like the 5 o'clock tea) are composed by coffee or milk and a sandwich. Between these meals we may also have some coffee and eat a custard.</p>
+            <p>Lunch and Dinner have defined hours and only very central or fast food restaurants may serve you main meals at different hours.</p>
+            <h3>Things you should definitely try</h3>
+            <p><b>Bacalhau -</b> Codfish is considered our most famous and traditional dish and can be served in 365 different ways, one per each day of the year. Bacalhau com Natas (with milk cream), Bacalhau à Brás (smashed with smashed french fries and onions) and Bacalhau com Broa (roasted with corn bread on top) are the best choices.</p>
+            <p><b>Grilled sardines -</b> Can be eaten all year round but Portuguese tradition says they should be eaten during the months without an “R” (May, June, July and August). During those hot summer days they are just perfect for both lunch and dinner, and something you can't miss. </p>
+            <p><b>Carne de Porco à alentejana -</b> Fried pork accompanied with fried potatoes and clams. The combination may look strange but definitely tastes good. Lemon and persely are perfect to add more flavours. </p>
+            <p><b>Alheira -</b> A sort of sausage invented by the Jews to pretend they were eating pork, includes different meats, bread and herbs. Comes with french fries and an egg on top.</p>
+            <p><b>Arroz de marisco -</b> A rice stew with lots of different sea food, clams and crab. In a good one you should have a bad time to find some rice on it. Normally one portion is enough to feed one family. </p>
+            <p><b>Cataplana -</b> Is a sort of a frying-pan, like one over the other and helps to keep all the ingredients flavours, while cooking. Fish or seafood in the cataplana is something everyone liked to try.  </p>
+            <p><b>Seafood -</b> Boiled, grilled, raw... whatever you wish, if you're in a coastal town you need to taste how tasty it is. </p>
+            <p><b>Grilled Fish -</b> Is probably grilled on the coal, comes with boiled potatoes and salad, is perfect for those summer lunches when you don't want to feel stuffed.</p>
+            <p><b>Feijoada -</b> A stew with beans, cowls, cubed pork meat and lots of different sausages. Don't get tricked with this short description: that thing is heavy. </p>
+            <p><b>Cozido à portuguesa -</b> Boiled potatoes, lots of different vegetables and also different types of meat and sausages. A traditional meal of those winter sundays, when all the family gets together. </p>
+            <p><b>Tripas à moda do Porto -</b> The legend says that when Henry the navigator departed to Africa, the inhabitants of Oporto gave his fleet all the meat in town and for a long while had nothing but guts to eat. This is a heavy dish: comes with cow guts, beans and sausages. Only the braves can finish it! </p>
+            <p><b>Snails -</b> Not a main meal but perfect to go with a beer or two. Boiled in water and lots of herbs, this is something Portuguese people love to eat while enjoying the sun with their friends. </p>
+        </div>
+        <div class="information-two">
+            <div style="background-image: url(./img/page-sliders/slider522.jpg)"><h4>Bacalhau</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider523.jpg)"><h4>Sardinhas</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider524.jpg)"><h4>Carne de Porco</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider525.jpg)"><h4>Alheira</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider526.jpg)"><h4>Arroz de Peixe</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider527.jpg)"><h4>Cataplana</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider528.jpg)"><h4>Feijoada</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider529.jpg)"><h4>Cozido à Portuguesa</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider5210.jpg)"><h4>Francesinha</h4></div>
+            <div style="background-image: url(./img/page-sliders/slider5211.jpg)"><h4>Snails</h4></div>
+        </div>
+        <div class="information-three">
+            <h3>May look confusing</h3>
+            <p><b>Appetizers</b> When you sit at a restaurant they'll bring you immediately some bread, olives and butter. After you've order they may also bring you wonderful small apetizers for you to eat while you wait. Though they may seem a courtesy, they may cost you almost as much as the meal itself... and they also fill you almost as much as the meal itself! If you don't want any of these, just don't touch them or tell the waitress that you don't want them right away.</p>
+            <p><b>Fish </b>in Portugal you can eat excellent fresh fish everywhere. The only thing that may look weird for you is that the fish never comes clean. Why? Portuguese people love to eat fish and also to know which kind of fish it is, and how fresh it is as well. This way, we like to clean it ourselves and refuse to eat just a fillet. At pricey restaurants they may clean it for you, but they'll bring the cooked fish first, show it to you, and then clean it in front of you. </p>
+            <p><b>Local restaurant or tourist trap?</b> One thing several people mention is that in Lisbon is very difficult to tell from the outside if the restaurant is a local's place or a tourist trap. It is indeed but there are some signs that may help you. If you see something like waitresses with a black menu on their hands inviting you to come in; big outside menus with pictures of their dishes; words like “traditional” or “local” written somewhere; or a restaurant located just in the main street (like Rua Augusta) you're probably entering a tourist trap.</p>
+            <p>If instead you see some of these signs you're probably at a locals restaurant: no English menus (you may have a bad time then, just ask for the “prato do dia” the special dish of the day, already made and at a convenient price); people eating a soup at the counter; a rather small restaurant; few waitresses rushing from table to table and the most important: the today' specials written in a disposable white table cloth (don't ask me why, but that's a common practice).</p>
+            <p><b>Service </b> are you having dinner at a very nice place, but the service is SO slow? Maybe it's not. Dinner is a great opportunity to meet friends and family, to talk about the day at work, or about your whole week if you didn't see this person for a while. A nice dinner may take up to 3 hours, probably the waitresses just don't want to rush you. We hate to be rushed while having our meals, and waitresses know that if they rush a costumer, he'll never go back there.</p>
+            <p><b>Tipping </b> is always a doubt. In Portugal you should tip more or less 10% of your bill and you may tip more if you really appreciated the service. In small caffés just few coins are enough but never tip with 0,01€, 0,02€ and 0,05€ coins: that's rather offensive.</p>
+            <p><b>Wine </b> is ridiculously cheap compared to your country. In a restaurant ask the waitress's opinion (he'll help you to choose the wine that suits your meal better) or go ahead and ask the house's wine: a decent wine at a great price.</p>
+            <p>In a supermarket: of course it depends on the region and brand, but decent/normal wines start at 2,50€. A 4,50€ table wine is already good.</p>
+            <p>Try the 5 meals Portuguese model and walk everywhere. You'll see it!</p>
+        </div>
+        <div class="information-four">
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- this is the Accommodation inside the Tips Page -->
+    <div id="topic" class="information">
+        <div class="information-one">
+            <h1>Accomodation</h1>
+            <h3>Best location</h3>
+            <p>If I was travelling to Lisbon I'd know where to book my hotel: somewhere near Rossio square. This is the exact centre of the city and at a walking distance from almost all attractions (except Belém area, which is far from everything) and being there you don't need to worry about transportation, the time you take to go to the centre or anything like that. Besides, it makes everything easier to find a good restaurant close to your hotel or to go for a short walk after dinner. </p>
+            <p>If you're afraid of hearing too much noise during the night, Avenida da Liberdade may be a good option: 5 walking minutes away from Rossio, still close to everything but more quiet and most hotels have double windows, which should keep the few noise away. </p>
+            <p>In both cases you'll be 20 minutes away (by taxi) from the airport, so, there's no need to book an hotel close to the airport for your last night. </p>
+            <h3>Worst location</h3>
+            <p>Avenida Almirante Reis and around. Looking at the map it seems really close to the centre (and is) and I bet you're finding excellent deals in that area... but maybe those hotels don't expect you to stay the whole night, if you know what I mean. Most structures are old and you won't feel much safe if you try to walk to your hotel at night, plus, subway closes earlier in that area. </p>
+            <p> Bairro Alto: close to the centre, no security problems but is the area where all the nightlife happens: double check if the hotel has double windows or you won't sleep until the last person goes home. </p>
+            <h3>Traditional neighborhoods</h3>
+            <p>Alfama, Graça or Castelo may be a fun alternative and give you a local's view of the city and it's life. Though there aren't that many hotels, there are apartments to rent for tourists, easy to find and book online. To my opinion, they are great if you're staying for several days. If you want to feel integrated do yourself a favour and greet your neighbors when you pass by, you'll be surprised with their kindness. </p>
+            <h3>Pousadas</h3>
+            <p>Some kind of state-inns, they are a different kind of accommodation, located in very special places. In Portugal there are 40 different pousadas, divided by 4 different categories: charm; historical; historical design and nature. Staying in a Pousada you'll have the opportunity to sleep in old palaces, former monasteries and special places like this. </p>
+            <p><b>Check-in and Check-out -</b> by law, all kinds of hotels and accomodation providers should give their costumers the room from 2p.m. And for the same reason, you should leave the room until noon of the check-out day.</p>
+            <p>If something goes wrong you should ask the "complaints book". </p>
+    
+        </div>
+        <div class="information-four">
+        </div>
+        <div class="information-five"">
+            <p onclick="redirectPage(6,0)">Ask a Question</p>
+        </div>
+    </div>
+    
+</section>
+
+
+<section class="page6">
+ 
+    <div id="topic">
+      
+      <div class="contact-form">
+        <div class="contact-form-title">
+          <h1>Questions & Booking</h1>
+          <div>ad</div>
+        </div> 
+        <!-- ------------------------------ this is the email form -->
+        <form  class="form-input" action="https://formspree.io/catia@lisbonstories.com" method="POST">
+  
+          <input type="text" name="name" class="name" maxlength="20" placeholder="Name">
+          <input type="text" name="country" class="country" maxlength="20" placeholder="Country">
+          <input type="email" name="email" class="email" maxlength="30" placeholder="Email">
+          <textarea name="message" id="message"  cols="30" rows="10" maxlength="500" placeholder="Content"></textarea>
+          
+          <p>All emails will be answered within less than 24 hours.</p>
+          <div class="status"></div>
+          
+          
+          <button type="submit" value="Send" class="submit">send</button>
+        </form>
+
+            
+
+        <!-- ---------------------------------------------------- -->
+        <div class="contact-form-info">
+          <h1>Mobile</h1>
+          <p>+351 912079343</p>
+          <h1>Email</h1>
+          <p>catia@lisbonstories.com</p>
+          <p><br> Do you want to book a tour? Do you have some questions or doubts? Do you want to submit your tour idea?</p>
+          <p>Feel free to contact Lisbon Stories!</p>
+          <button onclick="returnPage()" class="contact-return">return</button>
+        </div> 
+      </div>    
+    </div>
+  
+  </section>
+
+
+</section>
+
+
+<section>
+    <div class="footer">
+
+        <div class="footer-logo">
+          <div class="footer-logo-img"></div>
+          <div class="footer-logo-email" onclick="redirectPage(6,0)">e-mail us</div>
+        </div>
+        <div class="footer-contacts">
+          <div>Contact Us</div>
+          <div>
+            <p>+351 912079343 </p>
+            <p>catia@lisbonstories.com</p> 
+            <a href="https://api.whatsapp.com/send?phone=351912079343" target="_blank"><span>a</span>+351 912079343</a>
+            <a href="skype:echo123?chat" target="_blank"><span>a</span>Lisbonstories</a>
+            <a href="https://www.instagram.com/lisbon_stories/" target="_blank"><span>a</span>lisbon_stories</a>
+            <a href="https://twitter.com/Lisbonstories" target="_blank"><span>a</span>@LisbonStories</a>
+            <a href="https://web.facebook.com/LisbonStories/" target="_blank"><span>a</span>Like us on facebook</a>
+          </div>
+        </div>
+        <div class="footer-services">
+          <div>Services</div>
+          <div>
+            <ul>
+              <li>Purely Lisbon</li>
+              <li>Tiles: tour & painting workshop</li>
+              <li>Historical Elevators</li>
+              <li>Old-fashioned shopping tour</li>
+              <li>Old town walking tour</li>
+              <li>Lisbon with kids</li>
+              <li>Jewish Heritage</li>
+            </ul>
+            <ul>
+              <li>Lisbon and Sintra</li>
+              <li>Sintra and Cascais</li>
+              <li>Obidos and Ericeira</li>
+              <li>Evora, cork & wine</li>
+              <li>Fatima and surroundings</li>
+              <li>Arrabida: Wine, cheese & tiles</li>
+              <li>Fatima and Lisbon</li>
+              <li>Chasing the Templar Knights</li>
+              <li>Hiking in Sintra</li>
+            </ul>
+            <ul>
+              <li>Castles and Wild Horses</li>
+              <li>Trail Running Day Trip</li>
+              <li>Porto & Douro valley, 3days</li>
+              <li>One week</li>
+              <li>Stop-Over Lisbon</li>
+              <li>Your own tour</li>
+              <li>Historical Villages, 3days</li>
+              <li>Coimbra & central Portugal 2days</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-information">
+          <div>Information</div>
+          <div>
+            <ul>
+              <li>FAQ</li>
+              <li>About Lisbon Stories</li>
+              <li>Travelling With Kids</li>
+              <li>What's a Licensed Guide</li>
+              <li>Gift Certificates</li>
+              <li>Reviews</li>
+              <li>Shore Excursions</li>
+            </ul>
+            <ul>
+              <li>Basic Information</li>
+              <li>Getting Around</li>
+              <li>Gastronomy</li>
+              <li>Accommodation</li> 
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>Do you want to book a tour?<br>
+             Do you have some questions or doubts?<br>
+             Do you want to submit your tour idea?<br>
+             Feel free to contact Lisbon Stories!</p>
+          <p>Copywright © Lisbon Stories <br>
+             Website code by Gonçalo Fonseca & design by Paulo Dias </p>
+        </div>
+      </div>
+</section>
+  
+
+</body>
+  <script src="Js/main.js"></script>
+</html>

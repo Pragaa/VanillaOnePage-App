@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2386 820 139.617 59.729">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: white;
+      }
+
+      .cls-1 {
+        font-size: 25px;
+        font-family: BigCaslonFB-Black, Big Caslon FB;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="navbar_logo" transform="translate(2386 820)">
+    <text id="Lisbon_Stories" data-name="Lisbon
+Stories" class="cls-1" transform="translate(64.617 25.505)"><tspan x="0" y="0">Lisbon</tspan><tspan x="0" y="22">Stories</tspan></text>
+    <g id="Group_492" data-name="Group 492">
+      <ellipse id="Ellipse_26" data-name="Ellipse 26" class="cls-2" cx="3.698" cy="3.679" rx="3.698" ry="3.679" transform="translate(26.134 26.185)"/>
+      <ellipse id="Ellipse_27" data-name="Ellipse 27" class="cls-2" cx="6.564" cy="6.531" rx="6.564" ry="6.531" transform="translate(9.061 37.653)"/>
+      <ellipse id="Ellipse_28" data-name="Ellipse 28" class="cls-2" cx="6.564" cy="6.531" rx="6.564" ry="6.531" transform="translate(37.475 37.653)"/>
+      <ellipse id="Ellipse_29" data-name="Ellipse 29" class="cls-2" cx="6.564" cy="6.531" rx="6.564" ry="6.531" transform="translate(9.061 9.015)"/>
+      <ellipse id="Ellipse_30" data-name="Ellipse 30" class="cls-2" cx="6.564" cy="6.531" rx="6.564" ry="6.531" transform="translate(37.475 9.015)"/>
+      <path id="Path_871" data-name="Path 871" class="cls-2" d="M33.82,90.377V92.4a1.784,1.784,0,0,1-1.787,1.778H17.887A1.784,1.784,0,0,1,16.1,92.4V90.377A1.784,1.784,0,0,1,17.887,88.6H32.033A1.765,1.765,0,0,1,33.82,90.377Z" transform="translate(-11.138 -61.432)"/>
+      <path id="Path_872" data-name="Path 872" class="cls-2" d="M139.261,86.562,135.84,84.6v1.1H121.787A1.784,1.784,0,0,0,120,87.482v2.024a1.784,1.784,0,0,0,1.787,1.778H135.84v1.1l3.421-1.962,3.421-1.962Z" transform="translate(-83.018 -58.66)"/>
+      <path id="Path_873" data-name="Path 873" class="cls-2" d="M3.421,90.626l3.421,1.962v-1.1H20.895a1.784,1.784,0,0,0,1.787-1.778V87.682A1.784,1.784,0,0,0,20.895,85.9H6.811V84.8l-3.39,1.9L0,88.663Z" transform="translate(0 -58.799)"/>
+      <path id="Path_874" data-name="Path 874" class="cls-2" d="M89.917,140.364l1.972-3.4H90.78V122.978a1.784,1.784,0,0,0-1.787-1.778H86.959a1.784,1.784,0,0,0-1.787,1.778V136.96H84l1.972,3.4,1.972,3.4Z" transform="translate(-58.113 -84.038)"/>
+      <path id="Path_875" data-name="Path 875" class="cls-2" d="M85.972,3.4,84,6.776h1.109V20.758A1.784,1.784,0,0,0,86.9,22.536h2.034a1.784,1.784,0,0,0,1.787-1.778V6.776h1.109l-1.972-3.4L87.945,0Z" transform="translate(-58.113)"/>
+    </g>
+  </g>
+</svg>

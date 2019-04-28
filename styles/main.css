@@ -1,0 +1,90 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #292759;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+
+
+
+/***********/
+/*  loader */
+/***********/
+/* this makes the gif show on top of everything else */
+#pre-loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #292759;
+}
+/* this adjusts the gif size */
+#pre-loader > img {
+  width: 50px;
+}
+/* this is the class that enables the animation */
+#pre-loader.hide-loader {
+  -webkit-animation: loader 1s;
+          animation: loader 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+/* this creates the fade out anymation */
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+
+/***********/
+/*  Pages  */
+/***********/
+#pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#pages section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+#topic {
+  display: none;
+  overflow: hidden;
+  /* background: lightslategray; */
+}

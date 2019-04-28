@@ -1,0 +1,852 @@
+
+/***********/
+/*  Pages  */
+/***********/
+
+/* this is the styling for all pages that have excursons*/
+.excursons {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #292759;
+  padding: 20px 10%;
+}
+/* this is the text belonging to the first div*/
+.excursons-one h1 {
+  font-family: Times, Times New Roman, serif;
+  font-size: 30px;
+  color: white;
+  padding: 10px 0;
+}
+.excursons-one p {
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  text-indent: 10px;
+  text-align: justify;
+}
+.excursons-one span {
+  display: none;
+}
+/* this is the image belonging to the second div*/
+.excursons-two-slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 460px;
+  margin: 20px 0;
+}
+.excursons-two-slider div {
+  position: relative;
+  -webkit-user-drag: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  margin-right: 20px; 
+  margin-bottom: 180px;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.excursons-two-slider div h3 {
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  height: 70px;
+  padding: 30px 30px;
+  background: white;
+  text-align: center;
+}
+.excursons-two-slider div p {
+  position: absolute;
+  top: 345px;
+  height: 110px;
+  width: 100%;
+  padding: 5px 30px;
+  font-size: 14px;
+  background: white;
+}
+/* this is the information belonging to the third div*/
+.excursons-three {
+  margin: 15px 0;
+}
+.excursons-three .accordion-button h5 {
+  width: 70%;
+  margin: 25px auto 10px;
+  padding: 13px 10px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;  
+
+}
+.excursons-three .accordion-button:nth-child(1) {
+  display: none;
+}
+.excursons-three .accordion-content {
+  display: none;
+}
+.excursons-three .accordion-content:nth-child(2) {
+  display: block;
+}
+
+.accordion-content .excursons-three-license p {
+  padding: 3px 0;
+  color: white;
+  font-size: 14px;
+}
+.accordion-content .excursons-three-license p span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 16px;
+  height: 100%;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%;
+}
+.accordion-content .excursons-three-prices {
+  margin: 20px 0 45px 0;
+}
+.accordion-content .excursons-three-prices p {
+  position: relative;
+  text-align: right;
+  padding-right: 40%;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+}
+.accordion-content .excursons-three-prices p span {
+  padding-left: 10px;
+  color: white;
+  position: absolute;
+}
+.accordion-button.further-information {
+  position: relative;
+}
+.accordion-button.further-information.active::before {
+  display: block;
+  display: block;
+  content: "Your tour guide will pick you in your hotel lobby or cruise dock at your most convenient time and the walking tour will be adjusted to your own pace and needs";
+  font-size: 3.6vw;
+  text-align: justify;
+  z-index: 1;
+  position: absolute;
+  bottom: 54px;
+  left: 0;
+  height: 105px;
+  background-color: white;
+  margin: 0px 15%;
+  padding: 25px;
+  border-bottom: 20px solid #D6D3DE;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(122,115,122,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(122,115,122,1);
+box-shadow: 0px 0px 5px 0px rgba(122,115,122,1);
+}
+.accordion-button.further-information.active::after {
+  display: block;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  bottom: 44px;
+  left: 45%;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 10px solid #D6D3DE;
+}
+
+
+.excursons-four {
+  display: none;
+}
+/************************************************************/
+
+
+.information {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  margin-bottom: 30px;
+}
+/* this is the text belonging to the first div*/
+.information-one h1 {
+  font-family: Times, Times New Roman, serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 10% 20px;
+}
+.information-one h3 {
+  padding: 10px 10%;
+  font-size: 16px;
+  text-indent: 10px;
+  text-transform: uppercase;
+}
+.information-one p {
+  padding: 0px 10% 15px;
+  font-size: 14px;
+  color: black;
+  text-indent: 10px;
+  text-align: justify;
+}
+/* this is the reviews section*/
+.information-one .reviews {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10% 30px;
+  border-bottom: 1px solid #292759;
+}
+.information-one .reviews h4 {
+  line-height: 30px;
+}
+.information-one .reviews h4 > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 50px;
+  margin-right: 10px;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.information-one .reviews p {
+  padding: 20px 0;
+  font-size: 13px;
+}
+.information-one .reviews h5 {
+  align-self: flex-end;
+  padding-bottom: 15px;
+}
+.information-one .reviews div {
+  display: none;
+}
+/* this are the images belonging to the second div*/
+.information-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 15px 0 25px;
+}
+.information-two div {
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 200px;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.information-two div > h4 {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 100%;
+  background-color: rgba(239,239,239, 0.9);
+  font-family: Apple Chancery, cursive;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
+}
+/* this is the text belonging to the third div*/
+.information-three h3 {
+  padding: 10px 10%;
+  font-size: 16px;
+  text-indent: 10px;
+  text-transform: uppercase;
+}
+.information-three p {
+  padding: 0px 10% 15px;
+  font-size: 14px;
+  color: black;
+  text-indent: 10px;
+  text-align: justify;
+}
+/* this is the menu belonging to the forth div*/
+.information-four {
+  display: none;
+}
+
+/* this is the button belonging to the fifth div*/
+.information-five p {
+  width: 140px;
+  margin: 25px auto 40px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: #292759;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;  
+}
+/************************************************************/
+.contact-form {
+  width: 100%;
+}
+.contact-form-title {
+  width: 80%;
+  margin: 20px auto;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+.contact-form-title h1 {
+  flex-basis: 70%;
+  font-size: 8.8vw;
+  padding-right: 5%;
+}
+.contact-form-title div {
+  flex-basis: 30%;
+  color: transparent;
+  background-image: url(../img/icons/logoIconPeqAzul.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 65%;
+}
+.contact-form .form-input {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  margin-bottom: 100px;
+}
+.contact-form .form-input input, .contact-form .form-input textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #292759;
+  outline: none;
+}
+.contact-form .form-input p {
+  font-size: 3.4vw;
+  color: #818083;
+}
+.contact-form .form-input .status {
+  font-size: 3.4vw;
+}
+.contact-form .form-input button {
+  position: absolute;
+  right: 0;
+  width: 130px;
+  margin-top: 12px;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #292759;
+  border: 1px solid #292759;
+  border-radius: 5px;
+}
+.contact-form-info {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##Device = Tablets, Ipads (portrait)
+  ##Screen = From 768px to 1024px */
+  @media (min-width: 768px) {
+
+
+
+/* this is the styling for all pages that have excursons*/
+.excursons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 7%;
+  padding-bottom: 0;
+  max-height: 1150px;
+}
+
+.excursons-one {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 55%;
+  max-width: 500px;
+}
+.excursons-one h1 {
+  font-size: 3vw;
+}
+.excursons-one h1 span {
+  display: inline-block;
+  color: transparent;
+  background-image: url(../img/icons/logoIconPeqBranco.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+}
+.excursons-one .icon-break {
+  margin: 10px 0 15px 0;
+  width: 100%;
+  height: 26px;
+  background-image: url(../img/icons/logoIconPeqBranco.svg);
+  overflow: hidden;
+  background-repeat: space;
+}
+
+.excursons-two {
+  position: relative;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 40%;
+  /*height: 550px;*/
+  height: 325px;
+  overflow: hidden;
+  margin-top: 45px;
+  margin-left: 30px;
+  /*margin-bottom: 100px;*/
+}
+.excursons-two-slider div h3 {
+  display: none;
+}
+.excursons-two-slider div p {
+  display: none;
+}
+
+/* this is the pricing section on tablets*/
+.excursons-three {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 55%;
+  height: 350px;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.excursons-three .accordion-button h5 {
+  background-color: white;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left;
+  padding: 7px 12px;
+  margin: 0; 
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+.excursons-three .accordion-button h5:hover {
+  background-color: #645982;
+  color: white;
+}
+.excursons-three .accordion-button:nth-child(1) {
+  display: block;
+}
+.excursons-three .accordion-content {
+  background-color: #D6D3DE;
+  margin: 0 5px 0 15px;
+}
+.excursons-three .accordion-content:nth-child(2) {
+  display: none;
+}
+.accordion-content-open {
+  display: flex !important;
+}
+.accordion-content .excursons-three-license  {
+  flex-basis: 50%;
+  padding: 15px 0px 15px 15px;
+}
+.accordion-content .excursons-three-license p {
+  color: #292759;
+  font-size: 12px;
+}
+.accordion-content .excursons-three-prices {
+  flex-basis: 50%;
+  margin: 0;
+  padding: 25px 5px 25px 0;
+}
+.accordion-content .excursons-three-prices p {
+  color: #292759;
+  font-size: 1.3vw;
+  padding-right: 30%;
+}
+.accordion-content .excursons-three-prices p span {
+  color: #292759;
+}
+
+.accordion-button.further-information.active::before {
+  display: none;
+}
+.accordion-button.further-information.active::after {
+  display: none;
+}
+
+.accordion-content .excursons-three-further {
+  margin: 10px 0;
+}
+.accordion-content .excursons-three-further p {
+  padding: 5px 20px;
+  font-size: 13px;
+}
+
+.excursons-four {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  display: flex;
+  width: 40%;
+  margin-left: 30px;
+  height: 80px;
+  max-width: 450px;
+}
+.excursons-four div {
+  flex-basis: 33.3%;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.excursons-four div:hover {
+  border: 1px solid #D6D3DE;
+}
+
+/************************************************************/
+.information {
+  position: relative;
+  width: 730px; 
+  margin: 25px auto 120px;
+}
+/* this is regarding the text on the top*/
+.information-one {
+  width: 68%;
+}
+.information-one h1 {
+  padding: 20px 0;
+  text-align: left;
+}
+.information-one h3 {
+  padding: 20px 0 0;
+}
+.information-one p {
+  padding: 7px 0;
+}
+/* this is the reviews section*/
+.information-one .reviews {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0 35px 0;
+  padding-left: 15px;
+}
+.information-one .reviews h4 {
+  line-height: 30px;
+  flex-basis: 75%;
+  cursor: pointer;
+  display: block;
+}
+.information-one .reviews h4 > a {
+  text-decoration: none;
+}
+.information-one .reviews h4 > a:hover {
+  text-decoration: underline;
+}
+.information-one .reviews h4 > span {
+  background-color: grey;
+}
+.information-one .reviews div {
+  display: block;
+  flex-basis: 25%;
+  text-align: end;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.information-one .reviews div > span {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  color: transparent;
+  border-radius: 50px;
+  background-image:  url(../img/icons/logoIconPeqAzul.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-left: 5px;
+}
+.information-one .reviews div > h3 {
+  padding: 0;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  line-height: 18px;
+}
+.information-one .reviews div > h3:hover {
+  color: #645982;
+  text-decoration: underline;
+}
+.information-one .reviews p {
+  flex-basis: 72%;
+  text-align: start;
+  padding: 5px 0;
+}
+.information-one .reviews h5 {
+  flex-basis: 72%;
+  font-size: 10px;
+  text-align: end;
+  padding: 15px 0 25px 0;
+}
+/* this is regarding the images on second*/
+.information-two {
+  width: 68%;
+}
+.information-two div {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  height: 150px;
+}
+.information-two div > h4 {
+  bottom: 0;
+}
+.information-two div:nth-child(10) {
+  display: none;
+}
+/* this is regarding the text in third*/
+.information-three {
+  width: 68%;
+}
+.information-three h3 {
+  padding: 20px 0 0;
+}
+.information-three p {
+  padding: 7px 0;
+}
+/* this is the menu belonging to the forth div*/
+.information-four {
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 33%;
+  padding-left: 20px;
+}
+.information-four p {
+  position: relative;
+  text-align: right;
+  padding: 4px 0;
+  padding-right: 30px ;
+  color:  #292759;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+.information-four p:hover {
+  font-size: 13px;
+}
+.information-four p span {
+  padding-left: 27px;
+  position: absolute;
+  background: white;
+  display: inline-block;
+  width: 23px;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url(../img/icons/logoIconPeqAzul.svg);
+}   
+/* this is the button belonging to the fifth div*/
+.information-five  {
+  display: block;
+  position: absolute;
+  top: 280px;
+  right: 0;
+  width: 30%;
+  padding-left: 50px;
+}
+.information-five p {
+  width: auto;
+  font-size:12px;  
+  margin: 0;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.information-five p:hover {
+  border: 1px solid #292759;
+  background-color: #D6D3DE;
+  color: #292759;
+}
+/************************************************************/
+.contact-form {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-form-title {
+  flex-basis: 100%;
+  justify-content: flex-start;
+}
+.contact-form-title h1 {
+  flex-basis: 48%;
+  font-size: 3vw;
+  padding: 0;
+}
+.contact-form-title div {
+  flex-basis: 7%;
+}
+
+.contact-form .form-input {
+  flex-basis: 65%;
+  margin: 0;
+}
+.contact-form .form-input p {
+  font-size: 1.4vw;
+}
+.contact-form .form-input .status {
+  font-size: 1.4vw;
+}
+.contact-form .form-input button {
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.contact-form .form-input button:hover {
+  background-color: #D6D3DE;
+  color: #292759;
+}
+
+
+
+.contact-form-info {
+  flex-basis: 20%;
+  display: block;
+}
+.contact-form-info p {
+  font-size: 13px;
+  margin: 4px 0 10px;
+}
+.contact-form-info .contact-return {
+  width: 80px;
+  margin-top: 0px;
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #292759;
+  border: 1px solid #292759;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form-info .contact-return:hover {
+  background-color: #D6D3DE;
+  color: #292759;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px */
+  @media (min-width: 1025px) { 
+
+.excursons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 18%;
+  padding-bottom: 0;
+  max-height: 1200px;
+}
+.excursons-one h1 {
+  font-size: 30px;
+}
+.excursons-two {
+  max-width: 450px;
+}
+.accordion-content .excursons-three-license p {
+  font-size: 12px;
+}
+.accordion-content .excursons-three-prices p {
+  font-size: 12px;
+}
+.accordion-content .excursons-three-further p {
+  font-size: 14px;
+}
+/************************************************************/
+
+
+/************************************************************/
+.contact-form {
+  width: 60%;
+  margin-bottom: 100px;
+}
+.contact-form-title h1 {
+  font-size: 2.6vw;
+}
+
+.contact-form .form-input p {
+  font-size: 12px;
+}
+.contact-form .form-input .status {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
